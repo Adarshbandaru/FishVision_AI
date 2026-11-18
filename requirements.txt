@@ -1,0 +1,13 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch>=2.5.1
+torchvision>=0.20.1
+timm>=1.0.15
+huggingface_hub>=0.27,<2.0
+fastapi>=0.115
+uvicorn[standard]>=0.34
+streamlit>=1.42
+requests>=2.32
+Pillow>=11
+pandas>=2.2
+plotly>=6
+python-dotenv>=1.0

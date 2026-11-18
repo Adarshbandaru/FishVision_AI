@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-low":"#141c2b","on-secondary-container":"#003f38","primary-container":"#00f2fe","surface-variant":"#2d3545","surface-dim":"#0b1322","on-error-container":"#ffdad6","background":"#0b1322","error":"#ffb4ab","surface-tint":"#00dce6","surface-container-lowest":"#060e1d","on-secondary-fixed":"#00201c","on-primary-fixed":"#002022","secondary":"#4fdbc8","surface-container-high":"#222a3a","on-primary-container":"#006a70","outline":"#849495","tertiary-fixed-dim":"#b9c7e4","on-tertiary-fixed-variant":"#39475f","secondary-fixed":"#71f8e4","on-tertiary-fixed":"#0d1c32","primary":"#e0fdff","on-tertiary-container":"#526079","inverse-primary":"#00696f","surface-container-highest":"#2d3545","secondary-fixed-dim":"#4fdbc8","on-background":"#dbe2f8","inverse-on-surface":"#293041","outline-variant":"#3a494b","inverse-surface":"#dbe2f8","tertiary":"#f6f7ff","tertiary-fixed":"#d6e3ff","surface-bright":"#31394a","on-surface-variant":"#b9cacb","error-container":"#93000a","on-primary":"#00373a","secondary-container":"#04b4a2","on-primary-fixed-variant":"#004f53","on-error":"#690005","primary-fixed-dim":"#00dce6","tertiary-container":"#cddbf9","on-surface":"#dbe2f8","surface-container":"#18202f","surface":"#0b1322","on-secondary-fixed-variant":"#005048","primary-fixed":"#6ff6ff","on-tertiary":"#233148","on-secondary":"#003731"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-lg":"1.25rem","margin-desktop":"2rem",gutter:"1rem","space-xl":"2rem","space-xs":"0.25rem","gutter-tablet":"1.25rem","gutter-desktop":"1.5rem","space-sm":"0.5rem","space-md":"0.75rem",margin:"1rem","margin-tablet":"1.5rem"},fontFamily:{"body-lg":["Inter"],"label-code-sm":["JetBrains Mono"],"body-md":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"scientific-taxon":["Inter"],"headline-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-code-md":["JetBrains Mono"],"headline-xl-mobile":["Plus Jakarta Sans"],"label-code-lg":["JetBrains Mono"],"headline-lg":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"body-sm":["Inter"]},fontSize:{"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"label-code-sm":["10px",{lineHeight:"14px",letterSpacing:"0.06em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"scientific-taxon":["14px",{lineHeight:"20px",fontWeight:"500"}],"headline-sm":["18px",{lineHeight:"24px",fontWeight:"600"}],"headline-md":["22px",{lineHeight:"28px",fontWeight:"600"}],"label-code-md":["11px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"500"}],"headline-xl-mobile":["30px",{lineHeight:"38px",letterSpacing:"-0.01em",fontWeight:"700"}],"label-code-lg":["13px",{lineHeight:"18px",letterSpacing:"0.02em",fontWeight:"500"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-xl":["40px",{lineHeight:"48px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-sm":["12px",{lineHeight:"16px",fontWeight:"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen selection:bg-primary-container selection:text-on-primary-container"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest/90 backdrop-blur-xl z-50 flex flex-col justify-between p-space-md shadow-[0_8px_32px_-4px_rgba(0,8,20,0.6)]"><div class="flex flex-col gap-space-md"><div class="flex items-center gap-space-sm px-space-xs pt-space-xs"><img alt="FishVision AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrAg3ddCxxCm4vhhXwTdT8CkhWdvVdD0QJJhUegRVGxUFsCfcJiHMv8jae4ldpEpa1k_cZbqne6zoyKj1dDUnVGOnbrRDq9zLW2wu7SvYKJn2pWwhqG0Yb66LQ02H8OIPNqN2uoUQr_W1zplMlSPbo2ZDAM3vN1ceDPamvg2LwyY3gc_n4QI0cGVawnzjPx6taSMX4utw3wMLXwaSAuO9utSbcn7-zc7K_-_B8SIoO3VgA"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">FishVision AI</span><span class="font-label-code-sm text-label-code-sm bg-surface-container text-primary-fixed-dim px-space-xs py-0.5 rounded-full">v2.4-academic</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">Deep Oceanic Bio-Vision Lab</span></div></div><nav class="flex flex-col gap-space-xs mt-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm"><a class="group flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="overview-dashboard" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">grid_view</span><span class="font-body-md text-body-md">Overview & Dashboard</span></div></a><a class="group flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="recognition-workspace" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">biotech</span><span class="font-body-md text-body-md">Recognition Workspace</span></div></a><a class="group flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="species-catalog" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">menu_book</span><span class="font-body-md text-body-md">Species Catalog</span></div><span class="font-label-code-sm text-label-code-sm px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface-variant group-hover:text-on-surface">152 taxa</span></a><a aria-current="page" class="group flex items-center justify-between px-space-md py-space-sm rounded-lg transition-colors bg-primary-container text-on-primary-container font-headline-sm" data-path="model-benchmarks" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">speed</span><span class="font-body-md text-body-md">Model Benchmarks</span></div><span class="font-label-code-sm text-label-code-sm px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface-variant group-hover:text-on-surface">5 models</span></a><a class="group flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="prediction-history" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">history</span><span class="font-body-md text-body-md">Prediction History</span></div></a><a class="group flex items-center justify-between px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="methodology-about" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">science</span><span class="font-body-md text-body-md">Methodology & About</span></div></a></nav></div><div class="p-space-md rounded-lg bg-surface-container-low/70 flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-label-code-md text-label-code-md text-primary-fixed-dim uppercase tracking-wider">System Status</span><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary-container shadow-[0_0_12px_rgba(0,242,254,0.35)] animate-pulse"></span><span class="font-label-code-sm text-label-code-sm text-secondary">Live</span></div></div><div class="font-headline-sm text-headline-sm text-on-surface">5 / 5 Models Online</div><div class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">DINOv2, ViT-B/16, ConvNeXt, Swin, MobileNetV3</div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-dim/80 backdrop-blur-xl z-40 px-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs font-label-code-sm text-label-code-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px]">terminal</span><span>TELEMETRY:</span><span class="text-primary-fixed-dim font-semibold">38,420 Samples Evaluated</span></div><div class="relative flex items-center w-64 lg:w-80"><span class="material-symbols-outlined absolute left-space-sm text-[18px] text-outline pointer-events-none">search</span><input class="w-full bg-surface-container-lowest/80 text-on-surface font-body-sm text-body-sm pl-9 pr-space-md py-1.5 rounded-lg focus:outline-none focus:ring-1 focus:ring-primary-container placeholder:text-outline" placeholder="Quick search taxa, class, order..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-high/60"><span class="material-symbols-outlined text-[16px] text-secondary">bolt</span><span class="font-label-code-sm text-label-code-sm text-on-surface-variant">Inference ~42ms</span></div><button class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-body-sm font-semibold shadow-[0_0_16px_rgba(0,242,254,0.4)] hover:bg-primary transition-all"><span class="material-symbols-outlined text-[18px]">cloud_upload</span><span>Upload Sample</span></button><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxuzKs3TOy2gKVydOmEfFRBNua_L9BiD4_rvfEE3ZHkUceQ7T8jS3SaRQDrkrHx-HtSXD_EydffnPhWQJUCHE2XTNEiSqLj4sdQ6_23tD9MypqEJdFp4jvrt5_R_KNWEwkqcmbWkrMpIotuoZ2Vf3tbtOg9YWAUt9NBTR-PSChFKp7zY7pFCv9pozlIbEg3_apQc1pZHPVcQjxYgNVJMWDQk7h-bsNaSQs1RXzZa1Q"/><div class="hidden lg:flex flex-col text-left"><span class="font-body-sm text-body-sm font-medium text-on-surface">Dr. Elena Rostova</span><span class="font-label-code-sm text-label-code-sm text-on-surface-variant">Lead Marine ML Fellow</span></div></div></div></div></header><main class="relative pt-16 w-full bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="px-gutter-desktop py-space-xl flex flex-col gap-space-xl max-w-[1720px] mx-auto w-full">
+<!-- Top Academic Header & Overview -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-xl shadow-xl">
+<div class="absolute -top-32 -right-24 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 left-1/3 w-80 h-80 bg-secondary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col xl:flex-row xl:items-start justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-4xl">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-code-sm text-label-code-sm px-space-xs py-0.5 rounded-full bg-surface-container-high text-primary-fixed-dim uppercase tracking-wider">
+              EXP-ID // BENCH-2024-V2.4
+            </span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              NVIDIA A100-SXM4-80GB Evaluated
+            </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+            Neural Architecture Benchmarks & Cross-Model Comparison
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Empirical evaluation of 5 deep learning architectures across 152 fish species on test partition (7,684 unseen images).
+          </p>
+</div>
+<!-- Telemetry Pill Actions -->
+<div class="flex flex-wrap items-center gap-space-sm xl:self-start">
+<button class="px-space-md py-space-sm bg-surface-container-high text-on-surface hover:text-primary rounded-lg font-label-code-md text-label-code-md flex items-center gap-space-xs transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>EXPORT CSV (N=7684)</span>
+</button>
+<button class="px-space-md py-space-sm bg-surface-container-high text-on-surface hover:text-primary rounded-lg font-label-code-md text-label-code-md flex items-center gap-space-xs transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px]">terminal</span>
+<span>VIEW LATEX MATRIX</span>
+</button>
+</div>
+</div>
+<!-- Best Performer Highlight Strip -->
+<div class="mt-space-lg p-space-md rounded-lg bg-surface-container-high/70 backdrop-blur-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md shadow-inner">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center shadow-[0_0_16px_rgba(0,242,254,0.4)]">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code-sm text-label-code-sm text-secondary-fixed uppercase tracking-wider">Benchmark Leader</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">• Supervised Contrastive Pretraining</span>
+</div>
+<p class="font-body-md text-body-md text-primary font-medium">
+              DINOv2 (Vision Foundation Model) achieved the highest Top-1 Accuracy (96.8%) and lowest perplexity, followed by ViT-B/16 (95.4%). MobileNetV3 delivers highest throughput (71.4 FPS).
+            </p>
+</div>
+</div>
+<div class="flex items-center gap-space-lg self-end md:self-auto shrink-0">
+<div class="flex flex-col items-end">
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">PARETO OPTIMUM</span>
+<span class="font-headline-sm text-headline-sm text-secondary-fixed">DINOv2</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">MAX THROUGHPUT</span>
+<span class="font-headline-sm text-headline-sm text-primary-fixed-dim">71.4 FPS</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Five Architecture Comparison Cards Grid -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-code-sm text-label-code-sm text-primary-fixed-dim uppercase tracking-wider">SEC_01 // CANDIDATE ARCHITECTURES</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">(Standardized 384x384px Batch Size 32)</span>
+</div>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">CLICK CARD TO FILTER PARETO PLOT</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-space-md">
+<!-- Card 1: DINOv2 -->
+<div class="group relative rounded-xl bg-surface-container-low p-space-md flex flex-col justify-between shadow-xl transition-all duration-300 hover:bg-surface-container hover:shadow-[0_0_24px_rgba(0,242,254,0.25)]">
+<div class="absolute top-0 right-0 w-24 h-24 bg-primary-container/10 rounded-bl-full pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-code-sm text-label-code-sm px-space-xs py-0.5 rounded-full bg-primary-container text-on-primary-container font-semibold">
+                RANK #1 • BEST ACC
+              </span>
+<span class="font-label-code-sm text-label-code-sm text-secondary">38ms</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary tracking-tight">DINOv2</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">ViT-L/14 distilled • Self-supervised</p>
+<div class="space-y-space-xs my-space-sm">
+<div class="flex justify-between items-center text-body-sm">
+<span class="font-body-sm text-on-surface-variant">Top-1 Accuracy</span>
+<span class="font-label-code-md text-label-code-md text-primary font-bold">96.8%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 96.8%"></div>
+</div>
+<div class="flex justify-between items-center text-body-sm pt-1">
+<span class="font-body-sm text-on-surface-variant">Top-5 Accuracy</span>
+<span class="font-label-code-md text-label-code-md text-secondary-fixed">99.4%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 99.4%"></div>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-1 py-space-xs bg-surface-container-lowest/60 rounded-lg px-2 text-center my-space-xs">
+<div>
+<div class="font-label-code-sm text-label-code-sm text-on-surface-variant">PREC</div>
+<div class="font-label-code-md text-label-code-md text-on-surface">97.1%</div>
+</div>
+<div>
+<div class="font-label-code-sm text-label-code-sm text-on-surface-variant">REC</div>
+<div class="font-label-code-md text-label-code-md text-on-surface">96.5%</div>
+</div>
+<div>
+<div class="font-label-code-sm text-label-code-sm text-on-surface-variant">F1</div>
+<div class="font-label-code-md text-label-code-md text-primary-fixed-dim">96.8%</div>
+</div>
+</div>
+</div>
+<div class="pt-space-sm mt-space-sm flex items-center justify-between bg-surface-container-high/40 px-space-xs py-1 rounded">
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">86.4M par</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">18.2G FLOPs</span>
+<span class="font-label-code-sm text-label-code-sm text-secondary-fixed">26.3 FPS</span>
+</div>
+</div>
+<!-- Card 2: ViT-B/16 -->
+<div class="group relative rounded-xl bg-surface-container-low p-space-md flex flex-col justify-between shadow-xl transition-all duration-300 hover:bg-surface-container">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-code-sm text-label-code-sm px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface font-semibold">
+                RANK #2 • HIGH CAP
+              </span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">44ms</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">ViT-B/16</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Standard Patch 16 • Pure Transformer</p>
+<div class="space-y-space-xs my-space-sm">
+<div class="flex justify-between items-center text-body-sm">
+<span class="font-body-sm text-on-surface-variant">Top-1 Accuracy</span>
+<span class="font-label-code-md text-label-code-md text-on-surface font-bold">95.4%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 95.4%"></div>
+</div>
+<div class="flex justify-between items-center text-body-sm pt-1">
+<span class="font-body-sm text-on-surface-variant">Top-5 Accuracy</span>
+<span class="font-label-code-md text-label-code-md text-on-surface">98.9%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary/70 h-full rounded-full" style="width: 98.9%"></div>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-1 py-space-xs bg-surface-container-lowest/60 rounded-lg px-2 text-center my-space-xs">
+<div>
+<div class="font-label-code-sm text-label-code-sm text-on-surface-variant">PREC</div>
+<div class="font-label-code-md text-label-code-md text-on-surface">95.7%</div>
+</div>
+<div>
+<div class="font-label-code-sm text-label-code-sm text-on-surface-variant">REC</div>
+<div class="font-label-code-md text-label-code-md text-on-surface">95.1%</div>
+</div>
+<div>
+<div class="font-label-code-sm text-label-code-sm text-on-surface-variant">F1</div>
+<div class="font-label-code-md text-label-code-md text-on-surface">95.4%</div>
+</div>
+</div>
+</div>
+<div class="pt-space-sm mt-space-sm flex items-center justify-between bg-surface-container-high/40 px-space-xs py-1 rounded">
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">85.8M par</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">17.6G FLOPs</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface">22.7 FPS</span>
+</div>
+</div>
+<!-- Card 3: ConvNeXt Tiny -->
+<div class="group relative rounded-xl bg-surface-container-low p-space-md flex flex-col justify-between shadow-xl transition-all duration-300 hover:bg-surface-container">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-code-sm text-label-code-sm px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface font-semibold">
+                RANK #3 • CNN SOTA
+              </span>
+<span class="font-label-code-sm text-label-code-sm text-secondary-fixed">29ms</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">ConvNeXt-T</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Modernized ConvNet • Inverted Bottleneck</p>
+<div class="space-y-space-xs my-space-sm">
+<div class="flex justify-between items-center text-body-sm">
+<span class="font-body-sm text-on-surface-variant">Top-1 Accuracy</span>
+<span class="font-label-code-md text-label-code-md text-on-surface font-bold">94.2%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary/80 h-full rounded-full" style="width: 94.2%"></div>
+</div>
+<div class="flex justify-between items-center text-body-sm pt-1">
+<span class="font-body-sm text-on-surface-variant">Top-5 Accuracy</span>
+<span class="font-label-code-md text-label-code-md text-on-surface">98.4%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary/60 h-full rounded-full" style="width: 98.4%"></div>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-1 py-space-xs bg-surface-container-lowest/60 rounded-lg px-2 text-center my-space-xs">
+<div>
+<div class="font-label-code-sm text-label-code-sm text-on-surface-variant">PREC</div>
+<div class="font-label-code-md text-label-code-md text-on-surface">94.6%</div>
+</div>
+<div>
+<div class="font-label-code-sm text-label-code-sm text-on-surface-variant">REC</div>
+<div class="font-label-code-md text-label-code-md text-on-surface">93.8%</div>
+</div>
+<div>
+<div class="font-label-code-sm text-label-code-sm text-on-surface-variant">F1</div>
+<div class="font-label-code-md text-label-code-md text-on-surface">94.2%</div>
+</div>
+</div>
+</div>
+<div class="pt-space-sm mt-space-sm flex items-center justify-between bg-surface-container-high/40 px-space-xs py-1 rounded">
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">28.6M par</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">4.5G FLOPs</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface">34.5 FPS</span>
+</div>
+</div>
+<!-- Card 4: Swin Tiny -->
+<div class="group relative rounded-xl bg-surface-container-low p-space-md flex flex-col justify-between shadow-xl transition-all duration-300 hover:bg-surface-container">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-code-sm text-label-code-sm px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface font-semibold">
+                RANK #4 • SHIFTED
+              </span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">32ms</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Swin-Tiny</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Hierarchical ViT • Shifted Windows</p>
+<div class="space-y-space-xs my-space-sm">
+<div class="flex justify-between items-center text-body-sm">
+<span class="font-body-sm text-on-surface-variant">Top-1 Accuracy</span>
+<span class="font-label-code-md text-label-code-md text-on-surface font-bold">93.9%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary/70 h-full rounded-full" style="width: 93.9%"></div>
+</div>
+<div class="flex justify-between items-center text-body-sm pt-1">
+<span class="font-body-sm text-on-surface-variant">Top-5 Accuracy</span>
+<span class="font-label-code-md text-label-code-md text-on-surface">98.1%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary/50 h-full rounded-full" style="width: 98.1%"></div>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-1 py-space-xs bg-surface-container-lowest/60 rounded-lg px-2 text-center my-space-xs">
+<div>
+<div class="font-label-code-sm text-label-code-sm text-on-surface-variant">PREC</div>
+<div class="font-label-code-md text-label-code-md text-on-surface">94.1%</div>
+</div>
+<div>
+<div class="font-label-code-sm text-label-code-sm text-on-surface-variant">REC</div>
+<div class="font-label-code-md text-label-code-md text-on-surface">93.7%</div>
+</div>
+<div>
+<div class="font-label-code-sm text-label-code-sm text-on-surface-variant">F1</div>
+<div class="font-label-code-md text-label-code-md text-on-surface">93.9%</div>
+</div>
+</div>
+</div>
+<div class="pt-space-sm mt-space-sm flex items-center justify-between bg-surface-container-high/40 px-space-xs py-1 rounded">
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">28.3M par</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">4.5G FLOPs</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface">31.2 FPS</span>
+</div>
+</div>
+<!-- Card 5: MobileNetV3 -->
+<div class="group relative rounded-xl bg-surface-container-low p-space-md flex flex-col justify-between shadow-xl transition-all duration-300 hover:bg-surface-container">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-code-sm text-label-code-sm px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold">
+                RANK #5 • EDGE KING
+              </span>
+<span class="font-label-code-sm text-label-code-sm text-secondary-fixed">14ms</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">MobileNetV3</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Hardware-aware NAS • Depthwise Conv</p>
+<div class="space-y-space-xs my-space-sm">
+<div class="flex justify-between items-center text-body-sm">
+<span class="font-body-sm text-on-surface-variant">Top-1 Accuracy</span>
+<span class="font-label-code-md text-label-code-md text-on-surface font-bold">91.2%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary/50 h-full rounded-full" style="width: 91.2%"></div>
+</div>
+<div class="flex justify-between items-center text-body-sm pt-1">
+<span class="font-body-sm text-on-surface-variant">Top-5 Accuracy</span>
+<span class="font-label-code-md text-label-code-md text-on-surface">96.5%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary/30 h-full rounded-full" style="width: 96.5%"></div>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-1 py-space-xs bg-surface-container-lowest/60 rounded-lg px-2 text-center my-space-xs">
+<div>
+<div class="font-label-code-sm text-label-code-sm text-on-surface-variant">PREC</div>
+<div class="font-label-code-md text-label-code-md text-on-surface">91.5%</div>
+</div>
+<div>
+<div class="font-label-code-sm text-label-code-sm text-on-surface-variant">REC</div>
+<div class="font-label-code-md text-label-code-md text-on-surface">90.8%</div>
+</div>
+<div>
+<div class="font-label-code-sm text-label-code-sm text-on-surface-variant">F1</div>
+<div class="font-label-code-md text-label-code-md text-on-surface">91.1%</div>
+</div>
+</div>
+</div>
+<div class="pt-space-sm mt-space-sm flex items-center justify-between bg-surface-container-high/40 px-space-xs py-1 rounded">
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">5.4M par</span>
+<span class="font-label-code-sm text-label-code-sm text-on-surface-variant">0.22G FLOPs</span>
+<span class="font-label-code-sm text-label-code-sm text-secondary-fixed">71.4 FPS</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Comparative Analytics Visualizations (Bento layout) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Chart 1: Side-by-Side Accuracy Metrics (7 cols) -->
+<div class="lg:col-span-7 rounded-xl bg-surface-container-low p-space-lg shadow-xl flex flex-col justify-between">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm mb-space-md">
+<div class="flex flex-col">
+<span class="font-label-code-sm text-label-code-sm text-primary-fixed-dim uppercase tracking-wider">FIG 1 // VALIDATION METRICS PROFILE</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Cross-Metric Performance Comparison</h2>
+</div>
+<div class="flex items-center gap-space-md font-label-code-sm text-label-code-sm">
+<div class="flex items-center gap-1">
+<span class="w-3 h-3 rounded-sm bg-primary-container"></span>
+<span class="text-on-surface-variant">Top-1 Acc</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-3 h-3 rounded-sm bg-secondary"></span>
+<span class="text-on-surface-variant">Precision</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-3 h-3 rounded-sm bg-tertiary-container"></span>
+<span class="text-on-surface-variant">F1-Score</span>
+</div>
+</div>
+</div>
+<!-- SVG Grouped Bar Visualization -->
+<div class="w-full h-72 relative">
+<svg class="w-full h-full" fill="none" viewbox="0 0 650 240" xmlns="http://www.w3.org/2000/svg">
+<!-- Grid Lines -->
+<line class="text-surface-variant" stroke="currentColor" stroke-dasharray="3 3" x1="50" x2="630" y1="30" y2="30"></line>
+<text class="fill-current text-on-surface-variant" font-family="JetBrains Mono" font-size="9" text-anchor="end" x="42" y="34">100%</text>
+<line class="text-surface-variant" stroke="currentColor" stroke-dasharray="3 3" x1="50" x2="630" y1="80" y2="80"></line>
+<text class="fill-current text-on-surface-variant" font-family="JetBrains Mono" font-size="9" text-anchor="end" x="42" y="84">95%</text>
+<line class="text-surface-variant" stroke="currentColor" stroke-dasharray="3 3" x1="50" x2="630" y1="130" y2="130"></line>
+<text class="fill-current text-on-surface-variant" font-family="JetBrains Mono" font-size="9" text-anchor="end" x="42" y="134">90%</text>
+<line class="text-surface-variant" stroke="currentColor" stroke-dasharray="3 3" x1="50" x2="630" y1="180" y2="180"></line>
+<text class="fill-current text-on-surface-variant" font-family="JetBrains Mono" font-size="9" text-anchor="end" x="42" y="184">85%</text>
+<!-- Bottom axis -->
+<line class="text-outline-variant" stroke="currentColor" x1="50" x2="630" y1="205" y2="205"></line>
+<!-- MODEL 1: DINOv2 (x=70 to 150) -->
+<!-- 96.8% => y = 30 + (100 - 96.8) * 10 = 62px -->
+<rect class="fill-current text-primary-container" height="143" rx="2" width="16" x="75" y="62"></rect>
+<rect class="fill-current text-secondary" height="146" rx="2" width="16" x="94" y="59"></rect>
+<rect class="fill-current text-tertiary-container" height="143" rx="2" width="16" x="113" y="62"></rect>
+<text class="fill-current text-primary font-semibold" font-family="Plus Jakarta Sans" font-size="11" text-anchor="middle" x="102" y="222">DINOv2</text>
+<!-- MODEL 2: ViT-B/16 (x=185 to 265) -->
+<!-- 95.4% => y = 30 + 4.6 * 10 = 76px -->
+<rect class="fill-current text-primary-container opacity-85" height="129" rx="2" width="16" x="185" y="76"></rect>
+<rect class="fill-current text-secondary opacity-85" height="132" rx="2" width="16" x="204" y="73"></rect>
+<rect class="fill-current text-tertiary-container opacity-85" height="129" rx="2" width="16" x="223" y="76"></rect>
+<text class="fill-current text-on-surface" font-family="Plus Jakarta Sans" font-size="11" text-anchor="middle" x="212" y="222">ViT-B/16</text>
+<!-- MODEL 3: ConvNeXt-T (x=295 to 375) -->
+<!-- 94.2% => y = 30 + 5.8 * 10 = 88px -->
+<rect class="fill-current text-primary-container opacity-70" height="117" rx="2" width="16" x="295" y="88"></rect>
+<rect class="fill-current text-secondary opacity-70" height="121" rx="2" width="16" x="314" y="84"></rect>
+<rect class="fill-current text-tertiary-container opacity-70" height="117" rx="2" width="16" x="333" y="88"></rect>
+<text class="fill-current text-on-surface" font-family="Plus Jakarta Sans" font-size="11" text-anchor="middle" x="322" y="222">ConvNeXt-T</text>
+<!-- MODEL 4: Swin-T (x=405 to 485) -->
+<!-- 93.9% => y = 30 + 6.1 * 10 = 91px -->
+<rect class="fill-current text-primary-container opacity-60" height="114" rx="2" width="16" x="405" y="91"></rect>
+<rect class="fill-current text-secondary opacity-60" height="116" rx="2" width="16" x="424" y="89"></rect>
+<rect class="fill-current text-tertiary-container opacity-60" height="114" rx="2" width="16" x="443" y="91"></rect>
+<text class="fill-current text-on-surface" font-family="Plus Jakarta Sans" font-size="11" text-anchor="middle" x="432" y="222">Swin-Tiny</text>
+<!-- MODEL 5: MobileNetV3 (x=515 to 595) -->
+<!-- 91.2% => y = 30 + 8.8 * 10 = 118px -->
+<rect class="fill-current text-primary-container opacity-45" height="87" rx="2" width="16" x="515" y="118"></rect>
+<rect class="fill-current text-secondary opacity-45" height="90" rx="2" width="16" x="534" y="115"></rect>
+<rect class="fill-current text-tertiary-container opacity-45" height="86" rx="2" width="16" x="553" y="119"></rect>
+<text class="fill-current text-on-surface" font-family="Plus Jakarta Sans" font-size="11" text-anchor="middle" x="542" y="222">MobileNetV3</text>
+</svg>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>*Evaluated over stratified test partition (N=7,684).</span>
+<span class="font-label-code-sm text-label-code-sm text-primary-fixed-dim">Conf. Interval: 95% CI [±0.34%]</span>
+</div>
+</div>
+<!-- Chart 2: Radar Chart Representation (5 cols) -->
+<div class="lg:col-span-5 rounded-xl bg-surface-container-low p-space-lg shadow-xl flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex flex-col">
+<span class="font-label-code-sm text-label-code-sm text-primary-fixed-dim uppercase tracking-wider">FIG 2 // 5-DIMENSIONAL RADAR</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">System Trade-off Matrix</h2>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">radar</span>
+</div>
+<!-- Radar Visualization SVG -->
+<div class="w-full flex items-center justify-center py-space-xs">
+<svg class="w-64 h-64 overflow-visible" viewbox="0 0 240 240">
+<!-- Center 120,120 Radius 90 -->
+<!-- Concentric pentagons -->
+<polygon class="text-surface-variant" fill="none" points="120,30 205,92 173,190 67,190 35,92" stroke="currentColor" stroke-width="1"></polygon>
+<polygon class="text-surface-variant" fill="none" points="120,52 184,99 160,172 80,172 56,99" stroke="currentColor" stroke-dasharray="2 2" stroke-width="1"></polygon>
+<polygon class="text-surface-variant" fill="none" points="120,75 162,106 146,155 94,155 78,106" stroke="currentColor" stroke-dasharray="2 2" stroke-width="1"></polygon>
+<polygon class="text-surface-variant" fill="none" points="120,97 141,113 133,137 107,137 99,113" stroke="currentColor" stroke-width="1"></polygon>
+<!-- Spokes -->
+<line class="text-surface-variant" stroke="currentColor" stroke-width="1" x1="120" x2="120" y1="120" y2="30"></line>
+<line class="text-surface-variant" stroke="currentColor" stroke-width="1" x1="120" x2="205" y1="120" y2="92"></line>
+<line class="text-surface-variant" stroke="currentColor" stroke-width="1" x1="120" x2="173" y1="120" y2="190"></line>
+<line class="text-surface-variant" stroke="currentColor" stroke-width="1" x1="120" x2="67" y1="120" y2="190"></line>
+<line class="text-surface-variant" stroke="currentColor" stroke-width="1" x1="120" x2="35" y1="120" y2="92"></line>
+<!-- Polygon: MobileNetV3 (High Speed, High Efficiency, Low Acc, Moderate Robustness) -->
+<!-- Acc=0.55, Speed=0.98, Eff=0.95, Mem=0.92, Rob=0.6 -->
+<polygon fill="rgba(79, 219, 200, 0.12)" points="120,70 203,93 170,185 71,184 69,103" stroke="#4fdbc8" stroke-dasharray="3 2" stroke-width="1.5"></polygon>
+<!-- Polygon: DINOv2 (High Acc=0.98, Moderate Speed=0.55, Low Eff=0.45, High Rob=0.96, High Mem=0.42) -->
+<polygon fill="rgba(0, 242, 254, 0.25)" points="120,32 166,105 144,152 98,150 38,94" stroke="#00f2fe" stroke-width="2"></polygon>
+<!-- Labels -->
+<text class="fill-current text-primary-fixed-dim" font-family="JetBrains Mono" font-size="10" text-anchor="middle" x="120" y="20">ACCURACY</text>
+<text class="fill-current text-secondary-fixed" font-family="JetBrains Mono" font-size="10" text-anchor="start" x="214" y="93">SPEED (FPS)</text>
+<text class="fill-current text-on-surface-variant" font-family="JetBrains Mono" font-size="10" text-anchor="start" x="180" y="206">EFFICIENCY</text>
+<text class="fill-current text-on-surface-variant" font-family="JetBrains Mono" font-size="10" text-anchor="end" x="60" y="206">MEMORY</text>
+<text class="fill-current text-primary" font-family="JetBrains Mono" font-size="10" text-anchor="end" x="25" y="93">ROBUSTNESS</text>
+</svg>
+</div>
+<div class="flex items-center justify-center gap-space-lg pt-space-xs font-label-code-sm text-label-code-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-0.5 bg-primary-container"></span>
+<span class="text-primary">DINOv2 (Accuracy & Robustness)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-0.5 bg-secondary border border-dashed"></span>
+<span class="text-secondary">MobileNetV3 (Speed/Efficiency)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Chart 3: Pareto Frontier & Latency vs Throughput Breakdown -->
+<div class="rounded-xl bg-surface-container-low p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div>
+<span class="font-label-code-sm text-label-code-sm text-primary-fixed-dim uppercase tracking-wider">FIG 3 // EMPIRICAL PARETO FRONTIER</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Accuracy vs Latency Trade-Off Space</h2>
+</div>
+<div class="flex items-center gap-space-sm font-label-code-sm text-label-code-sm bg-surface-container-high px-space-md py-1 rounded-full">
+<span class="text-on-surface-variant">Batch Size: 32</span>
+<span class="text-on-surface-variant">•</span>
+<span class="text-primary-fixed-dim">FP16 TensorRT</span>
+<span class="text-on-surface-variant">•</span>
+<span class="text-secondary">Test Set: 7,684 Taxa Crops</span>
+</div>
+</div>
+<!-- Frontier Scatter Plot (Inline SVG) -->
+<div class="w-full h-80 relative bg-surface-container-lowest/50 rounded-lg p-space-md">
+<svg class="w-full h-full" fill="none" viewbox="0 0 900 280">
+<!-- Background Coordinate Grid -->
+<line class="text-surface-variant" stroke="currentColor" stroke-dasharray="2 4" x1="80" x2="860" y1="30" y2="30"></line>
+<line class="text-surface-variant" stroke="currentColor" stroke-dasharray="2 4" x1="80" x2="860" y1="90" y2="90"></line>
+<line class="text-surface-variant" stroke="currentColor" stroke-dasharray="2 4" x1="80" x2="860" y1="150" y2="150"></line>
+<line class="text-surface-variant" stroke="currentColor" stroke-dasharray="2 4" x1="80" x2="860" y1="210" y2="210"></line>
+<!-- X axis vertical guides -->
+<line class="text-surface-variant" stroke="currentColor" stroke-dasharray="2 4" x1="200" x2="200" y1="20" y2="230"></line>
+<line class="text-surface-variant" stroke="currentColor" stroke-dasharray="2 4" x1="380" x2="380" y1="20" y2="230"></line>
+<line class="text-surface-variant" stroke="currentColor" stroke-dasharray="2 4" x1="560" x2="560" y1="20" y2="230"></line>
+<line class="text-surface-variant" stroke="currentColor" stroke-dasharray="2 4" x1="740" x2="740" y1="20" y2="230"></line>
+<!-- Axes lines -->
+<line class="text-outline-variant" stroke="currentColor" stroke-width="1.5" x1="80" x2="860" y1="230" y2="230"></line>
+<line class="text-outline-variant" stroke="currentColor" stroke-width="1.5" x1="80" x2="80" y1="20" y2="230"></line>
+<!-- Y-axis labels (Accuracy: 90% - 98%) -->
+<text class="fill-current text-on-surface-variant" font-family="JetBrains Mono" font-size="10" text-anchor="end" x="70" y="214">90.0%</text>
+<text class="fill-current text-on-surface-variant" font-family="JetBrains Mono" font-size="10" text-anchor="end" x="70" y="154">92.5%</text>
+<text class="fill-current text-on-surface-variant" font-family="JetBrains Mono" font-size="10" text-anchor="end" x="70" y="94">95.0%</text>
+<text class="fill-current text-on-surface-variant" font-family="JetBrains Mono" font-size="10" text-anchor="end" x="70" y="34">97.5%</text>
+<!-- X-axis labels (Inference Latency: 10ms - 50ms) -->
+<text class="fill-current text-on-surface-variant" font-family="JetBrains Mono" font-size="10" text-anchor="middle" x="200" y="248">15ms</text>
+<text class="fill-current text-on-surface-variant" font-family="JetBrains Mono" font-size="10" text-anchor="middle" x="380" y="248">25ms</text>
+<text class="fill-current text-on-surface-variant" font-family="JetBrains Mono" font-size="10" text-anchor="middle" x="560" y="248">35ms</text>
+<text class="fill-current text-on-surface-variant" font-family="JetBrains Mono" font-size="10" text-anchor="middle" x="740" y="248">45ms</text>
+<!-- Axis Titles -->
+<text class="fill-current text-primary-fixed-dim" font-family="JetBrains Mono" font-size="11" text-anchor="middle" x="470" y="268">INFERENCE LATENCY (MILLISECONDS) → LOWER IS FASTER</text>
+<!-- Pareto Frontier Curve (Hypothetical Convex Hull) -->
+<path class="opacity-80" d="M 180,185 Q 400,105 615,48" fill="none" stroke="#00f2fe" stroke-dasharray="4 4" stroke-width="2"></path>
+<text class="fill-current text-primary-container" font-family="JetBrains Mono" font-size="10" transform="rotate(-18 340 125)" x="340" y="125">PARETO FRONTIER LINE</text>
+<!-- DATA POINTS -->
+<!-- Point 1: MobileNetV3 (14ms, 91.2%) -> X=180, Y=185 -->
+<g class="cursor-pointer">
+<circle class="fill-current text-secondary" cx="180" cy="185" r="7"></circle>
+<circle class="fill-current text-secondary/20" cx="180" cy="185" r="14"></circle>
+<text class="fill-current text-on-surface font-semibold" font-family="Plus Jakarta Sans" font-size="12" x="195" y="180">MobileNetV3 (14ms, 91.2%)</text>
+<text class="fill-current text-secondary font-mono" font-size="10" x="195" y="194">Edge Ideal • 71.4 FPS</text>
+</g>
+<!-- Point 2: ConvNeXt-T (29ms, 94.2%) -> X=452, Y=112 -->
+<g class="cursor-pointer">
+<circle class="fill-current text-secondary-fixed" cx="452" cy="112" r="7"></circle>
+<circle class="fill-current text-secondary-fixed/20" cx="452" cy="112" r="13"></circle>
+<text class="fill-current text-on-surface font-semibold" font-family="Plus Jakarta Sans" font-size="12" x="466" y="108">ConvNeXt-Tiny (29ms, 94.2%)</text>
+<text class="fill-current text-on-surface-variant font-mono" font-size="10" x="466" y="122">Balanced Workhorse • 34.5 FPS</text>
+</g>
+<!-- Point 3: Swin-T (32ms, 93.9%) -> X=506, Y=118 -->
+<g class="cursor-pointer">
+<circle class="fill-current text-tertiary-fixed-dim" cx="506" cy="118" r="6"></circle>
+<text class="fill-current text-on-surface-variant" font-family="Plus Jakarta Sans" font-size="11" x="520" y="132">Swin-T (32ms, 93.9%)</text>
+</g>
+<!-- Point 4: DINOv2 (38ms, 96.8%) -> X=615, Y=48 -->
+<g class="cursor-pointer">
+<circle class="fill-current text-primary-container" cx="615" cy="48" r="8"></circle>
+<circle class="fill-current text-primary-container/30 animate-pulse" cx="615" cy="48" r="16"></circle>
+<text class="fill-current text-primary font-bold" font-family="Plus Jakarta Sans" font-size="13" x="632" y="44">DINOv2 ViT-L (38ms, 96.8%)</text>
+<text class="fill-current text-primary-fixed-dim font-mono" font-size="10" x="632" y="58">Highest Accuracy Leader</text>
+</g>
+<!-- Point 5: ViT-B/16 (44ms, 95.4%) -> X=722, Y=82 -->
+<g class="cursor-pointer">
+<circle class="fill-current text-on-surface-variant" cx="722" cy="82" r="7"></circle>
+<text class="fill-current text-on-surface font-semibold" font-family="Plus Jakarta Sans" font-size="12" x="736" y="80">ViT-B/16 (44ms, 95.4%)</text>
+<text class="fill-current text-on-surface-variant font-mono" font-size="10" x="736" y="94">High Precision • 22.7 FPS</text>
+</g>
+</svg>
+</div>
+</div>
+<!-- Experimental Rigor & Dataset Split Section -->
+<div class="rounded-xl bg-surface-container-low p-space-lg shadow-xl flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm border-b-0">
+<div>
+<span class="font-label-code-sm text-label-code-sm text-primary-fixed-dim uppercase tracking-wider">SEC_02 // METHODOLOGY & PARTITION INTEGRITY</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Dataset Stratification & Data Augmentation Protocol</h2>
+</div>
+<span class="font-label-code-sm text-label-code-sm px-space-sm py-1 rounded bg-surface-container-high text-secondary">
+          Taxa Uniformity Index: 0.94
+        </span>
+</div>
+<!-- Dataset Split Visual Progress Bar -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-code-sm text-label-code-sm">
+<span class="text-on-surface font-medium">TOTAL CORPUS: 38,420 IMAGES ACROSS 152 SPECIES</span>
+<span class="text-on-surface-variant">Standardized Split 70% / 10% / 20%</span>
+</div>
+<div class="w-full h-4 rounded-full overflow-hidden flex bg-surface-container-highest">
+<div class="bg-primary-container h-full transition-all duration-500" style="width: 70%"></div>
+<div class="bg-secondary h-full transition-all duration-500" style="width: 10%"></div>
+<div class="bg-tertiary-container h-full transition-all duration-500" style="width: 20%"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md mt-space-xs font-label-code-sm text-label-code-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<span class="text-primary font-bold">Train Partition:</span>
+<span class="text-on-surface-variant">26,894 images (70%)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="text-secondary font-bold">Validation Partition:</span>
+<span class="text-on-surface-variant">3,842 images (10%)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-tertiary-container"></span>
+<span class="text-tertiary-fixed-dim font-bold">Test Partition:</span>
+<span class="text-on-surface-variant">7,684 images (20%) • Zero Leakage</span>
+</div>
+</div>
+</div>
+<!-- Detailed Augmentation & Training Hyperparameter Table -->
+<div class="overflow-x-auto rounded-lg bg-surface-container-lowest/60">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead class="bg-surface-container-high/80 font-label-code-sm text-label-code-sm text-primary-fixed-dim uppercase tracking-wider">
+<tr>
+<th class="py-space-sm px-space-md">Pipeline Step</th>
+<th class="py-space-sm px-space-md">Academic Method</th>
+<th class="py-space-sm px-space-md">Hyperparameter Formulation</th>
+<th class="py-space-sm px-space-md">Scientific Target</th>
+<th class="py-space-sm px-space-md text-right">Inference Impact</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-scientific-taxon">
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="py-space-sm px-space-md font-label-code-sm text-label-code-sm text-secondary-fixed">AUG-01</td>
+<td class="py-space-sm px-space-md font-medium text-primary">ColorJitter (Turbidity Sim)</td>
+<td class="py-space-sm px-space-md font-label-code-sm text-label-code-sm text-on-surface-variant">Brightness=0.3, Contrast=0.4, Sat=0.5, Hue=0.15</td>
+<td class="py-space-sm px-space-md text-on-surface">Simulates benthic attenuation, backscatter & green-water spectral shift</td>
+<td class="py-space-sm px-space-md font-label-code-sm text-label-code-sm text-secondary text-right">+4.2% in turbid water</td>
+</tr>
+<tr class="hover:bg-surface-container-high/40 transition-colors bg-surface-container-low/40">
+<td class="py-space-sm px-space-md font-label-code-sm text-label-code-sm text-secondary-fixed">AUG-02</td>
+<td class="py-space-sm px-space-md font-medium text-primary">Random Affine & Elastic</td>
+<td class="py-space-sm px-space-md font-label-code-sm text-label-code-sm text-on-surface-variant">Degrees=[-35, 35], Shear=[-12, 12], Scale=[0.8, 1.25]</td>
+<td class="py-space-sm px-space-md text-on-surface">Compensates for pitch/yaw deviations and fish body flexure while swimming</td>
+<td class="py-space-sm px-space-md font-label-code-sm text-label-code-sm text-secondary text-right">+2.1% across poses</td>
+</tr>
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="py-space-sm px-space-md font-label-code-sm text-label-code-sm text-secondary-fixed">AUG-03</td>
+<td class="py-space-sm px-space-md font-medium text-primary">CutMix Regularization</td>
+<td class="py-space-sm px-space-md font-label-code-sm text-label-code-sm text-on-surface-variant">α=1.0, Probability=0.50</td>
+<td class="py-space-sm px-space-md text-on-surface">Forces network attention onto non-obvious fin ray counts and scale patterns</td>
+<td class="py-space-sm px-space-md font-label-code-sm text-label-code-sm text-secondary text-right">-18% fine-grain error</td>
+</tr>
+<tr class="hover:bg-surface-container-high/40 transition-colors bg-surface-container-low/40">
+<td class="py-space-sm px-space-md font-label-code-sm text-label-code-sm text-secondary-fixed">AUG-04</td>
+<td class="py-space-sm px-space-md font-medium text-primary">MixUp Blending</td>
+<td class="py-space-sm px-space-md font-label-code-sm text-label-code-sm text-on-surface-variant">α=0.8, Linear Interpolation</td>
+<td class="py-space-sm px-space-md text-on-surface">Prevents overconfident posterior probabilities at species boundaries</td>
+<td class="py-space-sm px-space-md font-label-code-sm text-label-code-sm text-secondary text-right">ECE reduced by 0.031</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Quantitative Rigor Note Footing -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm p-space-md rounded-lg bg-surface-container-lowest/80 text-on-surface-variant font-label-code-sm text-label-code-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified_user</span>
+<span>STRICT SCIENTIFIC METHODOLOGY: Zero test-partition leakage verified by Taxon ID cryptographic hash verification.</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span>SEED: 42</span>
+<span>CUDA: 12.2</span>
+<span class="text-primary-fixed-dim">PyTorch v2.3.0+cu121</span>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

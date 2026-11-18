@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #0b1322;
+    color: #dbe2f8;
+    overflow-x: hidden;
+  }
+
+  /* Custom subtle dark scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0b1322;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #222a3a;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2d3545;
+  }
+}
+
+/* Glassmorphism & Stitch Marine utilities */
+.glass-panel {
+  background: rgba(20, 28, 43, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(34, 42, 58, 0.8);
+}
+
+.glass-card {
+  background: rgba(24, 32, 47, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(45, 53, 69, 0.6);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(0, 242, 254, 0.25);
+}
+
+.glow-teal {
+  box-shadow: 0 0 20px rgba(79, 219, 200, 0.25);
+}

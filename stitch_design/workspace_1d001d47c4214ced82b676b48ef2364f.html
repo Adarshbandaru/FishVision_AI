@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary-container":"#0063a1","inverse-surface":"#dbe2f8","on-error-container":"#ffdad6","on-surface":"#dbe2f8","surface-container-low":"#141c2b","on-background":"#dbe2f8","on-tertiary":"#003256","surface-bright":"#31394a","outline-variant":"#3a494b","surface-dim":"#0b1322","on-secondary-container":"#00554b","on-tertiary-fixed-variant":"#004a7a","primary-container":"#00f2fe","secondary":"#47efd6","surface-container-lowest":"#060e1d","outline":"#849495","surface-variant":"#2d3545","on-error":"#690005","on-primary-container":"#006a70","surface-container":"#18202f","on-tertiary-fixed":"#001d34","surface-container-high":"#222a3a","primary-fixed":"#6ff6ff","error":"#ffb4ab","primary":"#e0fdff","surface-container-highest":"#2d3545","inverse-on-surface":"#293041","background":"#0b1322","surface-tint":"#00dce6","on-secondary":"#003730","surface":"#0b1322","tertiary-fixed-dim":"#9bcbff","on-secondary-fixed-variant":"#005046","secondary-container":"#03d2ba","tertiary-fixed":"#d0e4ff","secondary-fixed-dim":"#2adec5","tertiary-container":"#c1ddff","secondary-fixed":"#57fbe1","tertiary":"#f4f7ff","on-primary-fixed":"#002022","inverse-primary":"#00696f","on-surface-variant":"#b9cacb","on-secondary-fixed":"#00201b","on-primary":"#00373a","error-container":"#93000a","on-primary-fixed-variant":"#004f53","primary-fixed-dim":"#00dce6"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-2xl":"3.5rem","space-xl":"2.25rem","space-md":"1rem","gutter":"1.25rem","margin-lg":"2.5rem","margin-md":"1.75rem","margin":"1rem","space-sm":"0.5rem","space-lg":"1.5rem","space-xs":"0.25rem","gutter-lg":"1.75rem"},fontFamily:{"display-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"telemetry-metric":["JetBrains Mono"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-sm":["JetBrains Mono"],"label-md":["JetBrains Mono"],"label-lg":["JetBrains Mono"],"body-lg":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"]},fontSize:{"display-lg":["48px",{lineHeight:"56px",letterSpacing:"-0.03em",fontWeight:"700"}],"body-md":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"telemetry-metric":["28px",{lineHeight:"32px",letterSpacing:"-0.04em",fontWeight:"700"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-md":["22px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-sm":["10px",{lineHeight:"14px",letterSpacing:"0.05em",fontWeight:"500"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"-0.01em",fontWeight:"500"}],"body-lg":["16px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"display-lg-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-sm":["18px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"400"}]}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-16 w-full px-margin-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><img alt="FishVision AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDFW3usyqHSH92zzqip5FGmI_y31A5waZ-L1aizXlNkzXA96V-_ARGFiRO6LQbRedF4mIsdDyfVSmQoMjBTHLDkMqbILqkPLYNpTRMZ7pwQ1lay-K1XqORobyulhHwo641X3egjwdoq-xaTvCBrZfI_8mLc8TkgOQfm2pzcvd33pveGJGGyYl03zPqcHtIq24TbCB2883LT_8nJSboRGXJUL1pNGAF4ZpRFSR-b6YyH"/><div class="flex items-baseline gap-space-sm"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary">FishVision<span class="text-secondary font-mono text-label-md ml-space-xs font-semibold">AI</span></span><span class="font-label-sm text-label-sm font-semibold uppercase px-space-xs py-0.5 rounded bg-surface-container-high text-secondary border border-outline-variant/40 tracking-wider">v2.4-academic</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-surface-container-highest text-primary font-semibold rounded-lg shadow-[0_0_12px_rgba(0,242,254,0.15)]"><a class="font-body-md text-body-md px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors whitespace-nowrap" data-path="dashboard" href="#">Dashboard</a><a aria-current="page" class="px-space-sm py-1.5 transition-colors whitespace-nowrap bg-surface-container-highest text-primary font-semibold rounded-lg shadow-[0_0_12px_rgba(0,242,254,0.15)]" data-path="recognition-workspace" href="#">Recognition Workspace</a><a class="font-body-md text-body-md px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors whitespace-nowrap" data-path="species-catalog" href="#">Species Catalog</a><a class="font-body-md text-body-md px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors whitespace-nowrap" data-path="model-comparison" href="#">Model Comparison</a><a class="font-body-md text-body-md px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors whitespace-nowrap" data-path="prediction-history" href="#">Prediction History</a><a class="font-body-md text-body-md px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors whitespace-nowrap" data-path="about-project" href="#">About Project</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-lowest border border-outline-variant/50 shadow-inner"><span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface font-medium">5 Models Online</span><span class="font-label-sm text-label-sm text-outline mx-0.5">|</span><span class="font-label-sm text-label-sm text-secondary font-mono">18ms</span></div><div class="hidden lg:flex items-center px-space-sm py-1 rounded bg-surface-container-high border border-outline-variant/40"><span class="font-label-sm text-label-sm font-mono text-primary font-semibold">CUDA / PyTorch 2.3</span></div><div class="hidden 2xl:flex items-center px-space-sm py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm border border-outline-variant/30"><span class="material-symbols-outlined text-[14px] mr-1 text-secondary">biotech</span>Marine AI Lab</div><a aria-label="Documentation and Source Repository" class="p-1.5 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center" href="https://github.com" rel="noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px]">code</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-4rem)]"><div class="flex flex-col w-full">
+<!-- Interactive Toast Notification Container -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-space-sm px-space-md py-space-sm rounded-lg bg-surface-container-highest border border-error/50 shadow-2xl text-on-surface" id="errorToast">
+<span class="material-symbols-outlined text-error text-[20px]">warning</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-error">Tensor Ingestion Warning</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Low-illumination specimen detected. Noise reduction applied automatically.</span>
+</div>
+<button class="ml-space-sm text-on-surface-variant hover:text-on-surface" onclick="toggleErrorToast(false)">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<!-- Primary Lab Bar: Mode, Hardware Pipeline & Quick Simulators -->
+<section class="w-full bg-surface-container-low px-margin-lg py-space-sm flex flex-wrap items-center justify-between gap-space-md border-b border-outline-variant/20">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse shadow-[0_0_8px_#00f2fe]"></span>
+<span class="font-label-md text-label-md font-bold text-primary uppercase tracking-wider">Workspace Engine Active</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">|</span>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">memory</span>
+<span class="font-label-sm text-label-sm font-mono">TensorRT v10.1 • Precision FP16</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline hidden sm:inline">|</span>
+<div class="hidden sm:flex items-center gap-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">biotech</span>
+<span class="font-label-sm text-label-sm font-mono">Batch Size: 1 [Streamed]</span>
+</div>
+</div>
+<!-- State switchers for interactive demonstration -->
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface text-label-sm font-label-sm font-medium transition-colors" id="rescanBtn" onclick="simulateScanCycle()">
+<span class="material-symbols-outlined text-[14px] text-secondary">refresh</span>
+        Re-Scan Tensor
+      </button>
+<button class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant text-label-sm font-label-sm font-medium transition-colors" id="emptyToggleBtn" onclick="toggleEmptyState()">
+<span class="material-symbols-outlined text-[14px]">layers_clear</span>
+<span id="emptyBtnText">Simulate Empty</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container hover:bg-surface-container-high text-error text-label-sm font-label-sm font-medium transition-colors" onclick="toggleErrorToast(true)">
+<span class="material-symbols-outlined text-[14px]">error_outline</span>
+        Trigger Diagnostic
+      </button>
+</div>
+</section>
+<!-- Main 2-Column Workstation Grid -->
+<div class="w-full px-margin-lg py-space-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-start">
+<!-- ==================== LEFT COLUMN: INPUT & IMAGE INSPECTOR (5 COLS) ==================== -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Header Strip -->
+<div class="flex items-end justify-between border-b border-outline-variant/30 pb-space-sm">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-mono">SPECIMEN VIEWPORT // CH-01</span>
+</div>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface tracking-tight mt-0.5">Input Marine Specimen</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Supported formats: JPG, JPEG, PNG (Max 25MB) • Multispectral Raw</p>
+</div>
+<span class="font-label-sm text-label-sm font-mono px-space-xs py-0.5 rounded bg-surface-container-high text-primary border border-outline-variant/40">CALIBRATED</span>
+</div>
+<!-- Loaded State Viewport / Drag-and-Drop Area -->
+<div class="relative w-full rounded-xl overflow-hidden bg-surface-container-lowest border border-outline-variant/50 shadow-2xl flex flex-col group">
+<!-- State 1: Active Loaded Fish Specimen (Default) -->
+<div class="relative w-full aspect-[4/3] bg-surface-dim overflow-hidden select-none" id="loadedStateContainer">
+<!-- Underwater Specimen Image -->
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]" data-alt="Vivid hyper-realistic underwater marine photography of a vibrant Blue Tang (Paracanthurus hepatus) fish swimming horizontally among a lush Indo-Pacific coral reef. Rich bioluminescent deep blue hues, vibrant yellow caudal fin spine, crystal clear aquamarine ocean lighting with soft water caustics reflecting across scales, cinematic scientific documentary lighting." id="specimenImage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSos9TrEyrHsR4yQF2tQ6mT1s0Qdnex5DdaknUOIDFtn58yJqFnuLaFsWi17XNT0YiKNsX0_VwtBADuBndn9c6QKorMGbXNwhgHxi5lPx9F_ooF2JH6h8La8via8ulU5-Ja922vIUaFT6H0POYqk48WWCUlSSfIpm1fG6jiKOFONuAcsGi-6FJTpNKQs9pRbsi84v3Yr5TsZWRBMI6Ar65R14WivnHbQKADt6MI0I"/>
+<!-- Optical Sensor HUD Overlays -->
+<div class="absolute inset-0 pointer-events-none p-space-md flex flex-col justify-between">
+<!-- Top HUD Coordinates -->
+<div class="flex items-center justify-between text-secondary font-mono font-label-sm text-label-sm tracking-wider drop-shadow-md">
+<span class="flex items-center gap-1 bg-surface-container-lowest/80 px-2 py-0.5 rounded backdrop-blur-md border border-outline-variant/30">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span>
+                  REC 1080P // ISO 160 // D65
+                </span>
+<span class="bg-surface-container-lowest/80 px-2 py-0.5 rounded backdrop-blur-md border border-outline-variant/30">
+                  GRID: 24°50'N 142°12'E
+                </span>
+</div>
+<!-- Reticle Corner Markers -->
+<div class="absolute top-4 left-4 w-4 h-4 border-t-2 border-l-2 border-primary-container pointer-events-none"></div>
+<div class="absolute top-4 right-4 w-4 h-4 border-t-2 border-r-2 border-primary-container pointer-events-none"></div>
+<div class="absolute bottom-4 left-4 w-4 h-4 border-b-2 border-l-2 border-primary-container pointer-events-none"></div>
+<div class="absolute bottom-4 right-4 w-4 h-4 border-b-2 border-r-2 border-primary-container pointer-events-none"></div>
+<!-- Live Scanning Laser Line (Animates during Scan) -->
+<div class="absolute left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary-container to-transparent shadow-[0_0_16px_#00f2fe] pointer-events-none opacity-90 transition-all duration-300" id="scanningLaser"></div>
+<!-- Bounding Box Over Fin / Spine Feature -->
+<div class="absolute top-[28%] left-[22%] w-[26%] h-[24%] border border-secondary/80 bg-secondary/5 rounded-sm pointer-events-none transition-all duration-500" id="featureBox1">
+<span class="absolute -top-4 left-0 font-label-sm text-label-sm font-mono text-secondary bg-surface-container-lowest/90 px-1 py-0.5 rounded-t text-[9px] uppercase border-t border-l border-r border-secondary/40">
+                  PT-01: Caudal Fin [99.2%]
+                </span>
+<div class="absolute -top-1 -left-1 w-2 h-2 bg-secondary rounded-full"></div>
+</div>
+<!-- Bounding Box Over Eye / Operculum -->
+<div class="absolute top-[38%] right-[18%] w-[18%] h-[20%] border border-primary-container/80 bg-primary-container/5 rounded-sm pointer-events-none transition-all duration-500" id="featureBox2">
+<span class="absolute -top-4 right-0 font-label-sm text-label-sm font-mono text-primary-container bg-surface-container-lowest/90 px-1 py-0.5 rounded-t text-[9px] uppercase border-t border-l border-r border-primary-container/40">
+                  PT-02: Cranial Orbit [98.7%]
+                </span>
+<div class="absolute -bottom-1 -right-1 w-2 h-2 bg-primary-container rounded-full"></div>
+</div>
+<!-- Bottom Telemetry HUD Coordinates -->
+<div class="flex items-center justify-between text-on-surface-variant font-mono font-label-sm text-label-sm">
+<div class="flex items-center gap-space-xs bg-surface-container-lowest/80 px-2 py-0.5 rounded backdrop-blur-md border border-outline-variant/30">
+<span class="material-symbols-outlined text-[12px] text-secondary">center_focus_strong</span>
+<span>Centroid: [1024, 768]</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest/80 px-2 py-0.5 rounded backdrop-blur-md border border-outline-variant/30 text-primary">
+<span class="material-symbols-outlined text-[12px] text-primary">scatter_plot</span>
+<span>Features Tracked: 382 pts</span>
+</div>
+</div>
+</div>
+<!-- Floating Overlay Quick-Controls -->
+<div class="absolute top-3 right-3 flex items-center gap-1.5 opacity-90 hover:opacity-100 transition-opacity">
+<button class="p-1.5 rounded bg-surface-container-high/90 hover:bg-surface-container-highest text-on-surface border border-outline-variant/40 backdrop-blur-md transition-colors shadow" title="Replace Specimen">
+<span class="material-symbols-outlined text-[16px]">file_upload</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container-high/90 hover:bg-error-container text-on-surface hover:text-on-error-container border border-outline-variant/40 backdrop-blur-md transition-colors shadow" onclick="toggleEmptyState()" title="Remove Image">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container-high/90 hover:bg-surface-container-highest text-on-surface border border-outline-variant/40 backdrop-blur-md transition-colors shadow" onclick="resetCanvasTransform()" title="Reset Canvas">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container-high/90 hover:bg-surface-container-highest text-secondary border border-outline-variant/40 backdrop-blur-md transition-colors shadow font-mono text-label-sm px-2" title="Zoom 100%">
+                100%
+              </button>
+</div>
+</div>
+<!-- State 2: Simulated Empty Dropzone State (Hidden by default) -->
+<div class="hidden w-full aspect-[4/3] flex flex-col items-center justify-center p-space-xl text-center bg-surface-container-lowest border-2 border-dashed border-outline-variant/60 hover:border-secondary/60 cursor-pointer transition-all" id="emptyStateContainer">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center mb-space-md text-secondary shadow-[0_0_20px_rgba(71,239,214,0.15)]">
+<span class="material-symbols-outlined text-[32px]">cloud_upload</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-primary mb-1">Drag and drop fish specimen</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm mb-space-md">Provide standard optical photo, underwater ROV feed frame, or marine laboratory specimen capture.</p>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-xs rounded bg-surface-container-high text-secondary hover:bg-surface-container-highest font-label-md text-label-md font-semibold border border-outline-variant/40 transition-colors" onclick="toggleEmptyState()">
+                Select Local File
+              </button>
+<button class="px-space-md py-space-xs rounded bg-primary-container text-on-primary-container font-label-md text-label-md font-bold shadow-[0_0_12px_rgba(0,242,254,0.3)] hover:opacity-95 transition-all" onclick="loadSampleSpecimen()">
+                Load Sample Specimen
+              </button>
+</div>
+</div>
+<!-- Image Metadata Bar -->
+<div class="bg-surface-container-high px-space-md py-space-xs flex flex-wrap items-center justify-between gap-y-1 text-on-surface-variant border-t border-outline-variant/30 font-mono text-label-sm">
+<div class="flex items-center gap-space-sm">
+<span class="text-on-surface">Res: <span class="text-primary font-bold">2048 x 1536</span></span>
+<span class="text-outline">|</span>
+<span>Color: sRGB</span>
+<span class="text-outline">|</span>
+<span>Format: JPEG (2.4 MB)</span>
+</div>
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>224x224 Normalized Tensor</span>
+</div>
+</div>
+</div>
+<!-- Action Control Center & Execution Trigger -->
+<div class="flex flex-col gap-space-md bg-surface-container-low p-space-md rounded-xl border border-outline-variant/40 shadow-lg">
+<!-- Model Selection Bar -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md font-semibold text-on-surface flex items-center justify-between">
+<span>Inference Pipeline Target</span>
+<span class="font-mono text-secondary font-label-sm text-label-sm">Ensemble Mode Active</span>
+</label>
+<div class="relative">
+<select class="w-full bg-surface-container-lowest border border-outline-variant/60 rounded-lg px-space-md py-2.5 text-on-surface font-body-md focus:border-primary-container focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" id="modelSelect">
+<option selected="" value="ensemble">Run All 5 Models (Academic Ensemble Consensus)</option>
+<option value="dinov2">DINOv2 Marine-ViT (Meta AI Oceanic Fine-tune)</option>
+<option value="vit">ViT-B/16 Patch Baseline (Oceanic Net)</option>
+<option value="convnext">ConvNeXt Tiny Taxonomic Classifier</option>
+<option value="swin">Swin Transformer (Hierarchical Shifted)</option>
+<option value="mobilenet">MobileNetV3 Underwater Edge (Low Power)</option>
+</select>
+</div>
+</div>
+<!-- Primary Execute Button -->
+<div class="flex items-center gap-space-sm">
+<button class="relative flex-1 group overflow-hidden bg-primary-container hover:bg-primary-fixed text-on-primary-container font-label-lg text-label-lg font-bold py-3.5 px-space-lg rounded-lg shadow-[0_0_24px_rgba(0,242,254,0.4)] active:scale-[0.99] transition-all flex items-center justify-center gap-space-sm" id="analyzeCta" onclick="simulateScanCycle()">
+<span class="material-symbols-outlined text-[22px] transition-transform group-hover:rotate-12">biotech</span>
+<span class="tracking-wide" id="analyzeBtnText">ANALYZE FISH SPECIMEN</span>
+<span class="w-2 h-2 rounded-full bg-on-primary-container animate-pulse"></span>
+</button>
+<button class="px-3.5 py-3.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface border border-outline-variant/40 transition-colors flex items-center justify-center" title="Tensor Ingestion Options">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+<!-- Live Scanning / Inference Status Indicator -->
+<div class="flex items-center justify-between px-space-sm py-2 rounded bg-surface-container-lowest border border-outline-variant/30 font-mono text-label-sm">
+<div class="flex items-center gap-2">
+<div class="relative flex items-center justify-center">
+<div class="w-2.5 h-2.5 rounded-full bg-secondary"></div>
+<div class="absolute w-4 h-4 rounded-full bg-secondary/30 animate-ping"></div>
+</div>
+<span class="text-on-surface font-medium" id="scanStatusBadge">Inference Complete — 5 Models Evaluated in 42ms</span>
+</div>
+<span class="text-secondary font-bold">100% HEALTH</span>
+</div>
+</div>
+<!-- Specimen Preprocessing Checklist -->
+<div class="grid grid-cols-3 gap-space-sm text-center">
+<div class="p-space-sm rounded bg-surface-container-lowest border border-outline-variant/30 flex flex-col items-center">
+<span class="material-symbols-outlined text-secondary text-[18px] mb-0.5">contrast</span>
+<span class="font-label-sm text-label-sm text-outline">Histogram Equalized</span>
+<span class="font-label-md text-label-md font-mono text-on-surface font-semibold">CLAHE Pass</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-lowest border border-outline-variant/30 flex flex-col items-center">
+<span class="material-symbols-outlined text-secondary text-[18px] mb-0.5">compress</span>
+<span class="font-label-sm text-label-sm text-outline">Aspect Ratio</span>
+<span class="font-label-md text-label-md font-mono text-on-surface font-semibold">1:1 Padded</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-lowest border border-outline-variant/30 flex flex-col items-center">
+<span class="material-symbols-outlined text-secondary text-[18px] mb-0.5">water_drop</span>
+<span class="font-label-sm text-label-sm text-outline">Atten. Correction</span>
+<span class="font-label-md text-label-md font-mono text-on-surface font-semibold">Beer-Lambert</span>
+</div>
+</div>
+</div>
+<!-- ==================== RIGHT COLUMN: INFERENCE ENGINE & DOSSIER RESULTS (7 COLS) ==================== -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- TOP CONSENSUS BANNER -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-surface-container-high via-surface-container to-surface-container-low border border-primary-container/30 shadow-[0_0_32px_rgba(0,242,254,0.08)] p-space-lg">
+<!-- Ambient Bioluminescent Glow Accent -->
+<div class="absolute -top-12 -right-12 w-48 h-48 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-md">
+<!-- Header Tag Strip -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest text-secondary font-mono text-label-sm font-semibold border border-secondary/30 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  HIGH CONFIDENCE CONSENSUS
+                </span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-primary font-mono text-label-sm border border-outline-variant/40">
+                  5/5 MODELS AGREE
+                </span>
+</div>
+<span class="font-mono text-label-sm text-outline">TAXON ID: #7749-PAC</span>
+</div>
+<!-- Main Predicted Taxon Title & Primary Metric -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-mono font-semibold">Primary Predicted Taxon</span>
+<h1 class="font-display-lg text-display-lg font-bold text-primary tracking-tight leading-none mt-1">Blue Tang</h1>
+<p class="font-headline-sm text-headline-sm italic text-on-surface-variant font-normal mt-0.5">Paracanthurus hepatus</p>
+</div>
+<!-- Big Score Telemetry Block -->
+<div class="flex flex-col md:items-end justify-center bg-surface-container-lowest/80 px-space-md py-space-sm rounded-lg border border-primary-container/30 shadow-inner">
+<span class="font-label-sm text-label-sm font-mono uppercase text-outline">Ensemble Softmax Confidence</span>
+<div class="flex items-baseline gap-1">
+<span class="font-telemetry-metric text-[40px] leading-tight font-bold text-primary-container font-mono tracking-tight" id="scoreNumber">98.6</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary-container font-mono">%</span>
+</div>
+<div class="flex items-center gap-1 text-secondary font-mono text-label-sm mt-0.5">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span>Statistically Deterministic</span>
+</div>
+</div>
+</div>
+<!-- Taxon Metadata Pills Bar -->
+<div class="pt-space-sm border-t border-outline-variant/30 flex flex-wrap items-center gap-space-md text-on-surface-variant font-body-sm">
+<div class="flex items-center gap-1.5">
+<span class="text-outline">Taxonomy:</span>
+<span class="text-on-surface font-semibold font-mono text-label-md">Family Acanthuridae (Surgeonfishes)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="text-outline">Habitat:</span>
+<span class="text-on-surface font-medium">Marine Saltwater • Coral Reef Depths 2-40m</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="text-outline">IUCN Status:</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-high text-secondary font-mono text-label-sm font-semibold">Least Concern (LC)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- MULTI-MODEL AGREEMENT MATRIX -->
+<div class="flex flex-col gap-space-md bg-surface-container-low p-space-md rounded-xl border border-outline-variant/40 shadow-lg">
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">hub</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Multi-Model Agreement Matrix</h3>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm font-mono text-primary font-bold bg-surface-container-highest px-space-xs py-0.5 rounded border border-outline-variant/40">
+                100% Architecture Consensus
+              </span>
+</div>
+</div>
+<!-- 5 Models Side-by-Side Cards (Responsive Grid) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-xs">
+<!-- Model 1: DINOv2 (Peak) -->
+<div class="flex flex-col justify-between p-space-sm rounded-lg bg-surface-container-lowest border border-primary-container/50 shadow-[0_0_16px_rgba(0,242,254,0.12)]">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm font-mono font-bold text-primary">DINOv2</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+</div>
+<span class="font-label-sm text-label-sm text-outline truncate" title="Meta Marine-ViT">Meta Marine-ViT</span>
+<div class="my-space-sm">
+<span class="font-telemetry-metric text-telemetry-metric font-bold text-primary-container font-mono">99.4%</span>
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden mt-1">
+<div class="h-full bg-primary-container w-[99.4%] shadow-[0_0_6px_#00f2fe]"></div>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-mono text-[10px]">
+<span class="italic truncate">P. hepatus</span>
+<span class="text-secondary font-bold">14ms</span>
+</div>
+</div>
+<!-- Model 2: ViT-B/16 -->
+<div class="flex flex-col justify-between p-space-sm rounded-lg bg-surface-container-lowest border border-outline-variant/40 hover:border-secondary/40 transition-colors">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm font-mono font-bold text-on-surface">ViT-B/16</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<span class="font-label-sm text-label-sm text-outline truncate">Oceanic Baseline</span>
+<div class="my-space-sm">
+<span class="font-telemetry-metric text-telemetry-metric font-bold text-secondary font-mono">98.9%</span>
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden mt-1">
+<div class="h-full bg-secondary w-[98.9%]"></div>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-mono text-[10px]">
+<span class="italic truncate">P. hepatus</span>
+<span>21ms</span>
+</div>
+</div>
+<!-- Model 3: ConvNeXt Tiny -->
+<div class="flex flex-col justify-between p-space-sm rounded-lg bg-surface-container-lowest border border-outline-variant/40 hover:border-secondary/40 transition-colors">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm font-mono font-bold text-on-surface">ConvNeXt</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<span class="font-label-sm text-label-sm text-outline truncate">Tiny Taxonomy</span>
+<div class="my-space-sm">
+<span class="font-telemetry-metric text-telemetry-metric font-bold text-secondary font-mono">98.2%</span>
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden mt-1">
+<div class="h-full bg-secondary w-[98.2%]"></div>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-mono text-[10px]">
+<span class="italic truncate">P. hepatus</span>
+<span>18ms</span>
+</div>
+</div>
+<!-- Model 4: Swin Transformer -->
+<div class="flex flex-col justify-between p-space-sm rounded-lg bg-surface-container-lowest border border-outline-variant/40 hover:border-secondary/40 transition-colors">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm font-mono font-bold text-on-surface">Swin-T</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<span class="font-label-sm text-label-sm text-outline truncate">Shifted Window</span>
+<div class="my-space-sm">
+<span class="font-telemetry-metric text-telemetry-metric font-bold text-secondary font-mono">97.8%</span>
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden mt-1">
+<div class="h-full bg-secondary w-[97.8%]"></div>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-mono text-[10px]">
+<span class="italic truncate">P. hepatus</span>
+<span>28ms</span>
+</div>
+</div>
+<!-- Model 5: MobileNetV3 -->
+<div class="flex flex-col justify-between p-space-sm rounded-lg bg-surface-container-lowest border border-outline-variant/40 hover:border-secondary/40 transition-colors">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm font-mono font-bold text-on-surface">MobileNet</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+</div>
+<span class="font-label-sm text-label-sm text-outline truncate">V3 Edge Small</span>
+<div class="my-space-sm">
+<span class="font-telemetry-metric text-telemetry-metric font-bold text-secondary-container font-mono">93.1%</span>
+<div class="w-full h-1 bg-surface-container-highest rounded-full overflow-hidden mt-1">
+<div class="h-full bg-secondary-container w-[93.1%]"></div>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-mono text-[10px]">
+<span class="italic truncate">P. hepatus</span>
+<span>6ms</span>
+</div>
+</div>
+</div>
+<!-- Architecture Consensus Bar -->
+<div class="flex flex-col gap-1 pt-space-xs border-t border-outline-variant/30">
+<div class="flex items-center justify-between font-mono text-label-sm">
+<span class="text-on-surface-variant">Combined Agreement Entropy</span>
+<span class="text-primary font-bold">H = 0.041 nats (Near Zero Entropy)</span>
+</div>
+<div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden flex">
+<div class="h-full bg-primary-container w-[98.6%]"></div>
+<div class="h-full bg-error-container w-[1.4%]"></div>
+</div>
+</div>
+</div>
+<!-- TOP-5 PROBABILITIES BREAKDOWN (ENSEMBLE SOFTMAX DISTRIBUTION) -->
+<div class="flex flex-col gap-space-md bg-surface-container-low p-space-md rounded-xl border border-outline-variant/40 shadow-lg">
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">bar_chart</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-on-surface">Ensemble Probability Distribution</h3>
+</div>
+<span class="font-mono text-label-sm text-outline">Top-5 Softmax Logits</span>
+</div>
+<!-- Rank List Bars -->
+<div class="flex flex-col gap-space-sm">
+<!-- Rank 1: Winner -->
+<div class="flex flex-col gap-1 p-space-sm rounded-lg bg-surface-container-lowest border border-primary-container/40">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="font-mono text-label-md font-bold text-primary-container">01</span>
+<div class="flex items-baseline gap-2 truncate">
+<span class="font-body-md text-body-md font-bold text-primary">Blue Tang</span>
+<span class="font-body-sm text-body-sm italic text-secondary font-mono truncate">Paracanthurus hepatus</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="px-1.5 py-0.2 rounded bg-primary-container/20 text-primary-container font-mono text-label-sm font-bold">TARGET MATCH</span>
+<span class="font-telemetry-metric text-headline-sm font-bold text-primary-container font-mono">98.6%</span>
+</div>
+</div>
+<div class="w-full h-2.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary to-primary-container w-[98.6%] shadow-[0_0_12px_#00f2fe]"></div>
+</div>
+</div>
+<!-- Rank 2 -->
+<div class="flex flex-col gap-1 p-space-sm rounded-lg bg-surface-container-lowest/60 border border-outline-variant/20 hover:border-outline-variant/40 transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="font-mono text-label-md font-bold text-outline">02</span>
+<div class="flex items-baseline gap-2 truncate">
+<span class="font-body-md text-body-md font-medium text-on-surface">Powder Blue Surgeonfish</span>
+<span class="font-body-sm text-body-sm italic text-on-surface-variant font-mono truncate">Acanthurus leucosternon</span>
+</div>
+</div>
+<span class="font-mono text-label-md font-bold text-on-surface-variant">0.9%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-outline w-[0.9%]"></div>
+</div>
+</div>
+<!-- Rank 3 -->
+<div class="flex flex-col gap-1 p-space-sm rounded-lg bg-surface-container-lowest/60 border border-outline-variant/20 hover:border-outline-variant/40 transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="font-mono text-label-md font-bold text-outline">03</span>
+<div class="flex items-baseline gap-2 truncate">
+<span class="font-body-md text-body-md font-medium text-on-surface">Yellow Tang</span>
+<span class="font-body-sm text-body-sm italic text-on-surface-variant font-mono truncate">Zebrasoma flavescens</span>
+</div>
+</div>
+<span class="font-mono text-label-md font-bold text-on-surface-variant">0.3%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-outline w-[0.3%]"></div>
+</div>
+</div>
+<!-- Rank 4 -->
+<div class="flex flex-col gap-1 p-space-sm rounded-lg bg-surface-container-lowest/60 border border-outline-variant/20 hover:border-outline-variant/40 transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="font-mono text-label-md font-bold text-outline">04</span>
+<div class="flex items-baseline gap-2 truncate">
+<span class="font-body-md text-body-md font-medium text-on-surface">Regal Blue Damselfish</span>
+<span class="font-body-sm text-body-sm italic text-on-surface-variant font-mono truncate">Chrysiptera parasema</span>
+</div>
+</div>
+<span class="font-mono text-label-md font-bold text-on-surface-variant">0.1%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-outline w-[0.1%]"></div>
+</div>
+</div>
+<!-- Rank 5 -->
+<div class="flex flex-col gap-1 p-space-sm rounded-lg bg-surface-container-lowest/60 border border-outline-variant/20 hover:border-outline-variant/40 transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="font-mono text-label-md font-bold text-outline">05</span>
+<div class="flex items-baseline gap-2 truncate">
+<span class="font-body-md text-body-md font-medium text-on-surface">Emperor Angelfish</span>
+<span class="font-body-sm text-body-sm italic text-on-surface-variant font-mono truncate">Pomacanthus imperator</span>
+</div>
+</div>
+<span class="font-mono text-label-md font-bold text-on-surface-variant">0.1%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-outline w-[0.1%]"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- QUICK ACTIONS SCIENTIFIC DOSSIER FOOTER -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md p-space-md rounded-xl bg-surface-container border border-outline-variant/40">
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-md py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-primary-fixed shadow-md transition-all" data-path="species-catalog" href="#">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+              View Verified Species Dossier
+            </a>
+</div>
+<div class="flex items-center gap-space-xs w-full sm:w-auto justify-end">
+<button class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-on-surface border border-outline-variant/50 font-label-sm text-label-sm font-semibold transition-colors" onclick="downloadJsonReport()">
+<span class="material-symbols-outlined text-[16px] text-secondary">file_download</span>
+              Export JSON Report
+            </button>
+<button class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-on-surface border border-outline-variant/50 font-label-sm text-label-sm font-semibold transition-colors" onclick="saveToHistoryModal()">
+<span class="material-symbols-outlined text-[16px] text-primary">bookmark</span>
+              Save to History
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Inline Micro-interaction Script -->
+<script>
+    let isScanning = false;
+    let isEmpty = false;
+
+    function simulateScanCycle() {
+      if (isScanning) return;
+      isScanning = true;
+      
+      const laser = document.getElementById('scanningLaser');
+      const box1 = document.getElementById('featureBox1');
+      const box2 = document.getElementById('featureBox2');
+      const analyzeBtnText = document.getElementById('analyzeBtnText');
+      const scoreNumber = document.getElementById('scoreNumber');
+      const scanStatus = document.getElementById('scanStatusBadge');
+
+      analyzeBtnText.textContent = "INFERRING SPECIMEN...";
+      scanStatus.textContent = "Multi-Model Matrix Calculating [CUDA Rank 0]...";
+      scanStatus.classList.add("text-secondary");
+
+      // Laser sweep animation sequence
+      laser.style.top = "5%";
+      laser.style.opacity = "1";
+      
+      let step = 0;
+      const interval = setInterval(() => {
+        step += 8;
+        laser.style.top = step + "%";
+        if (step >= 92) {
+          clearInterval(interval);
+          setTimeout(() => {
+            laser.style.top = "50%";
+            laser.style.opacity = "0.7";
+            analyzeBtnText.textContent = "ANALYZE FISH SPECIMEN";
+            scanStatus.textContent = "Inference Complete — 5 Models Evaluated in 42ms";
+            scanStatus.classList.remove("text-secondary");
+            scoreNumber.textContent = (98.4 + Math.random() * 0.4).toFixed(1);
+            isScanning = false;
+          }, 300);
+        }
+      }, 35);
+    }
+
+    function toggleEmptyState() {
+      isEmpty = !isEmpty;
+      const loaded = document.getElementById('loadedStateContainer');
+      const empty = document.getElementById('emptyStateContainer');
+      const emptyBtnText = document.getElementById('emptyBtnText');
+
+      if (isEmpty) {
+        loaded.classList.add('hidden');
+        empty.classList.remove('hidden');
+        emptyBtnText.textContent = "Restore Specimen";
+      } else {
+        loaded.classList.remove('hidden');
+        empty.classList.add('hidden');
+        emptyBtnText.textContent = "Simulate Empty";
+      }
+    }
+
+    function loadSampleSpecimen() {
+      isEmpty = false;
+      document.getElementById('loadedStateContainer').classList.remove('hidden');
+      document.getElementById('emptyStateContainer').classList.add('hidden');
+      document.getElementById('emptyBtnText').textContent = "Simulate Empty";
+      simulateScanCycle();
+    }
+
+    function toggleErrorToast(show) {
+      const toast = document.getElementById('errorToast');
+      if (show) {
+        toast.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
+        toast.classList.add('translate-y-0', 'opacity-100', 'pointer-events-auto');
+        setTimeout(() => toggleErrorToast(false), 6000);
+      } else {
+        toast.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
+        toast.classList.remove('translate-y-0', 'opacity-100', 'pointer-events-auto');
+      }
+    }
+
+    function resetCanvasTransform() {
+      const img = document.getElementById('specimenImage');
+      img.style.transform = 'scale(1)';
+    }
+
+    function downloadJsonReport() {
+      const payload = {
+        specimen_id: "SPEC-2024-PAR-HEP-091",
+        timestamp: new Date().toISOString(),
+        primary_match: "Paracanthurus hepatus",
+        consensus_rate: 1.0,
+        ensemble_confidence: 0.986,
+        models_benchmarked: [
+          { name: "DINOv2", confidence: 0.994, latency_ms: 14 },
+          { name: "ViT-B/16", confidence: 0.989, latency_ms: 21 },
+          { name: "ConvNeXt Tiny", confidence: 0.982, latency_ms: 18 },
+          { name: "Swin Transformer", confidence: 0.978, latency_ms: 28 },
+          { name: "MobileNetV3", confidence: 0.931, latency_ms: 6 }
+        ]
+      };
+      const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "fishvision_specimen_hepatus.json";
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    function saveToHistoryModal() {
+      const btn = event.currentTarget;
+      const original = btn.innerHTML;
+      btn.innerHTML = `<span class="material-symbols-outlined text-[16px] text-secondary">check</span> Logged #7749`;
+      setTimeout(() => {
+        btn.innerHTML = original;
+      }, 2500);
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/30 py-space-lg mt-space-2xl"><div class="w-full px-margin-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant"><div class="flex flex-col gap-0.5 text-center md:text-left"><div class="font-label-md text-label-md font-semibold text-primary flex items-center gap-space-xs justify-center md:justify-start"><span class="material-symbols-outlined text-[16px] text-secondary">menu_book</span>Peer-Reviewed Scientific Baseline Dossier (IEEE Marine / OceanNet AI 2024)</div><div class="font-body-sm text-body-sm text-outline">Oceanic Specimen Classification Benchmark: 22,741 calibrated multi-spectral images across 152 verified taxa.</div></div><div class="flex items-center gap-space-lg text-center md:text-right"><span class="font-label-sm text-label-sm font-mono text-on-surface-variant">CC-BY-NC-SA 4.0 Open Academic License</span><span class="font-label-sm text-label-sm font-mono text-secondary">FishVision Core v2.4</span></div></div></footer></body></html>

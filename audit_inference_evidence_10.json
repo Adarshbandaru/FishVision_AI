@@ -1,0 +1,1671 @@
+{
+  "timestamp": "2026-11-11T02:19:06Z",
+  "tested_specimens_count": 10,
+  "results": [
+    {
+      "specimen_index": 1,
+      "filename": "A73EGS_P_sample.jpg",
+      "ground_truth_class": "A73EGS-P",
+      "ground_truth_common": "A73egs P",
+      "consensus_species": "A73EGS-P",
+      "agreement_count": 5,
+      "is_unanimous": true,
+      "agreeing_models": [
+        "DINOv2",
+        "ViT-B/16",
+        "ConvNeXt Tiny",
+        "Swin Tiny",
+        "MobileNetV3"
+      ],
+      "disagreeing_models": [],
+      "total_latency_ms": 5824.9,
+      "models": [
+        {
+          "model": "DINOv2",
+          "prediction": "A73EGS-P",
+          "confidence": 99.9706,
+          "latency_ms": 3891.3,
+          "top5": [
+            {
+              "species": "A73EGS-P",
+              "confidence": 99.9706
+            },
+            {
+              "species": "notropis percobromus",
+              "confidence": 0.0152
+            },
+            {
+              "species": "cottus carolinae",
+              "confidence": 0.0028
+            },
+            {
+              "species": "lepomis macrochirus",
+              "confidence": 0.0028
+            },
+            {
+              "species": "Snakehead",
+              "confidence": 0.0022
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "ViT-B/16",
+          "prediction": "A73EGS-P",
+          "confidence": 95.3378,
+          "latency_ms": 979.7,
+          "top5": [
+            {
+              "species": "A73EGS-P",
+              "confidence": 95.3378
+            },
+            {
+              "species": "Climbing Perch",
+              "confidence": 0.6144
+            },
+            {
+              "species": "lepomis miniatus",
+              "confidence": 0.2764
+            },
+            {
+              "species": "aesopia_cornuta",
+              "confidence": 0.2304
+            },
+            {
+              "species": "alectis_ciliaris",
+              "confidence": 0.206
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "ConvNeXt Tiny",
+          "prediction": "A73EGS-P",
+          "confidence": 95.0106,
+          "latency_ms": 323.2,
+          "top5": [
+            {
+              "species": "A73EGS-P",
+              "confidence": 95.0106
+            },
+            {
+              "species": "alectis_indica",
+              "confidence": 0.3885
+            },
+            {
+              "species": "anampses_geographicus",
+              "confidence": 0.2361
+            },
+            {
+              "species": "anampses_femininus",
+              "confidence": 0.1923
+            },
+            {
+              "species": "anampses_caeruleopunctatus",
+              "confidence": 0.1891
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "Swin Tiny",
+          "prediction": "A73EGS-P",
+          "confidence": 95.1934,
+          "latency_ms": 557.7,
+          "top5": [
+            {
+              "species": "A73EGS-P",
+              "confidence": 95.1934
+            },
+            {
+              "species": "lepomis gibbosus",
+              "confidence": 0.3527
+            },
+            {
+              "species": "acanthaluteres_brownii",
+              "confidence": 0.3009
+            },
+            {
+              "species": "anampses_geographicus",
+              "confidence": 0.2876
+            },
+            {
+              "species": "anampses_femininus",
+              "confidence": 0.2308
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "MobileNetV3",
+          "prediction": "A73EGS-P",
+          "confidence": 63.1757,
+          "latency_ms": 73.0,
+          "top5": [
+            {
+              "species": "A73EGS-P",
+              "confidence": 63.1757
+            },
+            {
+              "species": "Climbing Perch",
+              "confidence": 8.1156
+            },
+            {
+              "species": "aethaloperca_rogaa",
+              "confidence": 5.5021
+            },
+            {
+              "species": "achoerodus_viridis",
+              "confidence": 2.4346
+            },
+            {
+              "species": "acanthopagrus_berda",
+              "confidence": 1.2966
+            }
+          ],
+          "in_canonical_classes": true
+        }
+      ]
+    },
+    {
+      "specimen_index": 2,
+      "filename": "Indo_Pacific_Tarpon_sample.jpg",
+      "ground_truth_class": "Indo-Pacific Tarpon",
+      "ground_truth_common": "Indo-Pacific Tarpon",
+      "consensus_species": "Indo-Pacific Tarpon",
+      "agreement_count": 4,
+      "is_unanimous": false,
+      "agreeing_models": [
+        "DINOv2",
+        "ViT-B/16",
+        "ConvNeXt Tiny",
+        "Swin Tiny"
+      ],
+      "disagreeing_models": [
+        {
+          "model": "MobileNetV3",
+          "predicted": "Glass Perchlet",
+          "confidence": 18.0202
+        }
+      ],
+      "total_latency_ms": 5868.2,
+      "models": [
+        {
+          "model": "DINOv2",
+          "prediction": "Indo-Pacific Tarpon",
+          "confidence": 99.9791,
+          "latency_ms": 3975.8,
+          "top5": [
+            {
+              "species": "Indo-Pacific Tarpon",
+              "confidence": 99.9791
+            },
+            {
+              "species": "Big Head Carp",
+              "confidence": 0.004
+            },
+            {
+              "species": "Tenpounder",
+              "confidence": 0.004
+            },
+            {
+              "species": "esox lucius",
+              "confidence": 0.0031
+            },
+            {
+              "species": "Snakehead",
+              "confidence": 0.0023
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "ViT-B/16",
+          "prediction": "Indo-Pacific Tarpon",
+          "confidence": 85.2613,
+          "latency_ms": 955.9,
+          "top5": [
+            {
+              "species": "Indo-Pacific Tarpon",
+              "confidence": 85.2613
+            },
+            {
+              "species": "aesopia_cornuta",
+              "confidence": 0.8348
+            },
+            {
+              "species": "alepes_kleinii",
+              "confidence": 0.7019
+            },
+            {
+              "species": "Big Head Carp",
+              "confidence": 0.5335
+            },
+            {
+              "species": "anampses_femininus",
+              "confidence": 0.4478
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "ConvNeXt Tiny",
+          "prediction": "Indo-Pacific Tarpon",
+          "confidence": 75.3938,
+          "latency_ms": 328.1,
+          "top5": [
+            {
+              "species": "Indo-Pacific Tarpon",
+              "confidence": 75.3938
+            },
+            {
+              "species": "Big Head Carp",
+              "confidence": 2.537
+            },
+            {
+              "species": "alepes_kleinii",
+              "confidence": 1.2838
+            },
+            {
+              "species": "acanthaluteres_spilomelanurus",
+              "confidence": 0.9973
+            },
+            {
+              "species": "alectis_indica",
+              "confidence": 0.8425
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "Swin Tiny",
+          "prediction": "Indo-Pacific Tarpon",
+          "confidence": 78.3841,
+          "latency_ms": 524.6,
+          "top5": [
+            {
+              "species": "Indo-Pacific Tarpon",
+              "confidence": 78.3841
+            },
+            {
+              "species": "Tenpounder",
+              "confidence": 2.4549
+            },
+            {
+              "species": "Bangus",
+              "confidence": 1.9143
+            },
+            {
+              "species": "achoerodus_gouldii",
+              "confidence": 1.7328
+            },
+            {
+              "species": "Big Head Carp",
+              "confidence": 1.0056
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "MobileNetV3",
+          "prediction": "Glass Perchlet",
+          "confidence": 18.0202,
+          "latency_ms": 83.8,
+          "top5": [
+            {
+              "species": "Glass Perchlet",
+              "confidence": 18.0202
+            },
+            {
+              "species": "Indo-Pacific Tarpon",
+              "confidence": 17.5017
+            },
+            {
+              "species": "Snakehead",
+              "confidence": 9.4558
+            },
+            {
+              "species": "Big Head Carp",
+              "confidence": 9.3857
+            },
+            {
+              "species": "Mudfish",
+              "confidence": 4.4075
+            }
+          ],
+          "in_canonical_classes": true
+        }
+      ]
+    },
+    {
+      "specimen_index": 3,
+      "filename": "Tenpounder_sample.jpg",
+      "ground_truth_class": "Tenpounder",
+      "ground_truth_common": "Hawaiian Ladyfish (Tenpounder)",
+      "consensus_species": "Tenpounder",
+      "agreement_count": 4,
+      "is_unanimous": false,
+      "agreeing_models": [
+        "DINOv2",
+        "ViT-B/16",
+        "ConvNeXt Tiny",
+        "Swin Tiny"
+      ],
+      "disagreeing_models": [
+        {
+          "model": "MobileNetV3",
+          "predicted": "Freshwater Eel",
+          "confidence": 20.5222
+        }
+      ],
+      "total_latency_ms": 5910.9,
+      "models": [
+        {
+          "model": "DINOv2",
+          "prediction": "Tenpounder",
+          "confidence": 99.9994,
+          "latency_ms": 3950.6,
+          "top5": [
+            {
+              "species": "Tenpounder",
+              "confidence": 99.9994
+            },
+            {
+              "species": "phenacobius uranops",
+              "confidence": 0.0006
+            },
+            {
+              "species": "Glass Perchlet",
+              "confidence": 0.0
+            },
+            {
+              "species": "chrosomus erythrogaster",
+              "confidence": 0.0
+            },
+            {
+              "species": "Bangus",
+              "confidence": 0.0
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "ViT-B/16",
+          "prediction": "Tenpounder",
+          "confidence": 92.1581,
+          "latency_ms": 1028.5,
+          "top5": [
+            {
+              "species": "Tenpounder",
+              "confidence": 92.1581
+            },
+            {
+              "species": "achoerodus_gouldii",
+              "confidence": 0.4636
+            },
+            {
+              "species": "Bangus",
+              "confidence": 0.3694
+            },
+            {
+              "species": "anampses_melanurus",
+              "confidence": 0.3493
+            },
+            {
+              "species": "alectis_indica",
+              "confidence": 0.2887
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "ConvNeXt Tiny",
+          "prediction": "Tenpounder",
+          "confidence": 84.0092,
+          "latency_ms": 323.1,
+          "top5": [
+            {
+              "species": "Tenpounder",
+              "confidence": 84.0092
+            },
+            {
+              "species": "amanses_scopas",
+              "confidence": 1.2727
+            },
+            {
+              "species": "alectis_ciliaris",
+              "confidence": 0.7614
+            },
+            {
+              "species": "aesopia_cornuta",
+              "confidence": 0.7463
+            },
+            {
+              "species": "acanthaluteres_spilomelanurus",
+              "confidence": 0.7439
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "Swin Tiny",
+          "prediction": "Tenpounder",
+          "confidence": 93.2546,
+          "latency_ms": 533.8,
+          "top5": [
+            {
+              "species": "Tenpounder",
+              "confidence": 93.2546
+            },
+            {
+              "species": "Bangus",
+              "confidence": 1.4269
+            },
+            {
+              "species": "alectis_ciliaris",
+              "confidence": 0.3313
+            },
+            {
+              "species": "acanthaluteres_spilomelanurus",
+              "confidence": 0.3274
+            },
+            {
+              "species": "Freshwater Eel",
+              "confidence": 0.3029
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "MobileNetV3",
+          "prediction": "Freshwater Eel",
+          "confidence": 20.5222,
+          "latency_ms": 74.9,
+          "top5": [
+            {
+              "species": "Freshwater Eel",
+              "confidence": 20.5222
+            },
+            {
+              "species": "Tenpounder",
+              "confidence": 9.987
+            },
+            {
+              "species": "Long-Snouted Pipefish",
+              "confidence": 9.2116
+            },
+            {
+              "species": "Glass Perchlet",
+              "confidence": 3.0184
+            },
+            {
+              "species": "Big Head Carp",
+              "confidence": 2.2683
+            }
+          ],
+          "in_canonical_classes": true
+        }
+      ]
+    },
+    {
+      "specimen_index": 4,
+      "filename": "alepes_kleinii_sample.jpg",
+      "ground_truth_class": "alepes_kleinii",
+      "ground_truth_common": "Alepes kleinii",
+      "consensus_species": "alepes_kleinii",
+      "agreement_count": 5,
+      "is_unanimous": true,
+      "agreeing_models": [
+        "DINOv2",
+        "ViT-B/16",
+        "ConvNeXt Tiny",
+        "Swin Tiny",
+        "MobileNetV3"
+      ],
+      "disagreeing_models": [],
+      "total_latency_ms": 6189.5,
+      "models": [
+        {
+          "model": "DINOv2",
+          "prediction": "alepes_kleinii",
+          "confidence": 99.9994,
+          "latency_ms": 4260.8,
+          "top5": [
+            {
+              "species": "alepes_kleinii",
+              "confidence": 99.9994
+            },
+            {
+              "species": "alectis_indica",
+              "confidence": 0.0003
+            },
+            {
+              "species": "Glass Perchlet",
+              "confidence": 0.0002
+            },
+            {
+              "species": "aluterus_monoceros",
+              "confidence": 0.0001
+            },
+            {
+              "species": "Indo-Pacific Tarpon",
+              "confidence": 0.0
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "ViT-B/16",
+          "prediction": "alepes_kleinii",
+          "confidence": 90.4799,
+          "latency_ms": 984.5,
+          "top5": [
+            {
+              "species": "alepes_kleinii",
+              "confidence": 90.4799
+            },
+            {
+              "species": "Pangasius",
+              "confidence": 0.5865
+            },
+            {
+              "species": "amanses_scopas",
+              "confidence": 0.4741
+            },
+            {
+              "species": "aesopia_cornuta",
+              "confidence": 0.3948
+            },
+            {
+              "species": "acanthaluteres_brownii",
+              "confidence": 0.3902
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "ConvNeXt Tiny",
+          "prediction": "alepes_kleinii",
+          "confidence": 84.2691,
+          "latency_ms": 313.1,
+          "top5": [
+            {
+              "species": "alepes_kleinii",
+              "confidence": 84.2691
+            },
+            {
+              "species": "acanthaluteres_spilomelanurus",
+              "confidence": 2.0945
+            },
+            {
+              "species": "alectis_indica",
+              "confidence": 2.0773
+            },
+            {
+              "species": "alectis_ciliaris",
+              "confidence": 1.1254
+            },
+            {
+              "species": "acreichthys_tomentosus",
+              "confidence": 0.6701
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "Swin Tiny",
+          "prediction": "alepes_kleinii",
+          "confidence": 93.692,
+          "latency_ms": 555.4,
+          "top5": [
+            {
+              "species": "alepes_kleinii",
+              "confidence": 93.692
+            },
+            {
+              "species": "alectis_indica",
+              "confidence": 0.5693
+            },
+            {
+              "species": "acanthaluteres_spilomelanurus",
+              "confidence": 0.2806
+            },
+            {
+              "species": "acreichthys_tomentosus",
+              "confidence": 0.2772
+            },
+            {
+              "species": "Pangasius",
+              "confidence": 0.2769
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "MobileNetV3",
+          "prediction": "alepes_kleinii",
+          "confidence": 64.5482,
+          "latency_ms": 75.7,
+          "top5": [
+            {
+              "species": "alepes_kleinii",
+              "confidence": 64.5482
+            },
+            {
+              "species": "Mullet",
+              "confidence": 4.4206
+            },
+            {
+              "species": "Glass Perchlet",
+              "confidence": 3.5048
+            },
+            {
+              "species": "Goby",
+              "confidence": 2.8503
+            },
+            {
+              "species": "Snakehead",
+              "confidence": 2.3732
+            }
+          ],
+          "in_canonical_classes": true
+        }
+      ]
+    },
+    {
+      "specimen_index": 5,
+      "filename": "bryconamericus_guyanensis_sample.jpg",
+      "ground_truth_class": "bryconamericus guyanensis",
+      "ground_truth_common": "Bryconamericus guyanensis",
+      "consensus_species": "bryconamericus guyanensis",
+      "agreement_count": 5,
+      "is_unanimous": true,
+      "agreeing_models": [
+        "DINOv2",
+        "ViT-B/16",
+        "ConvNeXt Tiny",
+        "Swin Tiny",
+        "MobileNetV3"
+      ],
+      "disagreeing_models": [],
+      "total_latency_ms": 6073.1,
+      "models": [
+        {
+          "model": "DINOv2",
+          "prediction": "bryconamericus guyanensis",
+          "confidence": 99.9684,
+          "latency_ms": 3942.4,
+          "top5": [
+            {
+              "species": "bryconamericus guyanensis",
+              "confidence": 99.9684
+            },
+            {
+              "species": "cyprinella lutrensis",
+              "confidence": 0.0307
+            },
+            {
+              "species": "lepomis macrochirus",
+              "confidence": 0.0004
+            },
+            {
+              "species": "brycinus nurse",
+              "confidence": 0.0003
+            },
+            {
+              "species": "scarus rivulatus",
+              "confidence": 0.0001
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "ViT-B/16",
+          "prediction": "bryconamericus guyanensis",
+          "confidence": 49.8041,
+          "latency_ms": 987.3,
+          "top5": [
+            {
+              "species": "bryconamericus guyanensis",
+              "confidence": 49.8041
+            },
+            {
+              "species": "scarus rivulatus",
+              "confidence": 2.7056
+            },
+            {
+              "species": "cyprinella lutrensis",
+              "confidence": 1.9491
+            },
+            {
+              "species": "acanthaluteres_brownii",
+              "confidence": 1.8915
+            },
+            {
+              "species": "acreichthys_tomentosus",
+              "confidence": 1.5819
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "ConvNeXt Tiny",
+          "prediction": "bryconamericus guyanensis",
+          "confidence": 73.4316,
+          "latency_ms": 434.2,
+          "top5": [
+            {
+              "species": "bryconamericus guyanensis",
+              "confidence": 73.4316
+            },
+            {
+              "species": "alectis_ciliaris",
+              "confidence": 1.3556
+            },
+            {
+              "species": "achoerodus_gouldii",
+              "confidence": 1.1239
+            },
+            {
+              "species": "anampses_neoguinaicus",
+              "confidence": 1.026
+            },
+            {
+              "species": "alectis_indica",
+              "confidence": 0.8439
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "Swin Tiny",
+          "prediction": "bryconamericus guyanensis",
+          "confidence": 57.7523,
+          "latency_ms": 605.7,
+          "top5": [
+            {
+              "species": "bryconamericus guyanensis",
+              "confidence": 57.7523
+            },
+            {
+              "species": "scarus rivulatus",
+              "confidence": 5.8952
+            },
+            {
+              "species": "alectis_ciliaris",
+              "confidence": 1.9534
+            },
+            {
+              "species": "Gold Fish",
+              "confidence": 1.9412
+            },
+            {
+              "species": "lepomis gibbosus",
+              "confidence": 1.7564
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "MobileNetV3",
+          "prediction": "bryconamericus guyanensis",
+          "confidence": 23.6989,
+          "latency_ms": 103.5,
+          "top5": [
+            {
+              "species": "bryconamericus guyanensis",
+              "confidence": 23.6989
+            },
+            {
+              "species": "lepomis gibbosus",
+              "confidence": 15.6055
+            },
+            {
+              "species": "scarus rivulatus",
+              "confidence": 4.5808
+            },
+            {
+              "species": "lepomis humilis",
+              "confidence": 4.3978
+            },
+            {
+              "species": "labeobarbus intermedius",
+              "confidence": 4.0836
+            }
+          ],
+          "in_canonical_classes": true
+        }
+      ]
+    },
+    {
+      "specimen_index": 6,
+      "filename": "enneacanthus_gloriosus_sample.jpg",
+      "ground_truth_class": "enneacanthus gloriosus",
+      "ground_truth_common": "Enneacanthus gloriosus",
+      "consensus_species": "enneacanthus gloriosus",
+      "agreement_count": 5,
+      "is_unanimous": true,
+      "agreeing_models": [
+        "DINOv2",
+        "ViT-B/16",
+        "ConvNeXt Tiny",
+        "Swin Tiny",
+        "MobileNetV3"
+      ],
+      "disagreeing_models": [],
+      "total_latency_ms": 2854.6,
+      "models": [
+        {
+          "model": "DINOv2",
+          "prediction": "enneacanthus gloriosus",
+          "confidence": 99.9571,
+          "latency_ms": 1953.3,
+          "top5": [
+            {
+              "species": "enneacanthus gloriosus",
+              "confidence": 99.9571
+            },
+            {
+              "species": "scorpaenodes guamensis",
+              "confidence": 0.0425
+            },
+            {
+              "species": "lepomis marginatus",
+              "confidence": 0.0001
+            },
+            {
+              "species": "chaenobryttus gulosus",
+              "confidence": 0.0001
+            },
+            {
+              "species": "scarus rivulatus",
+              "confidence": 0.0001
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "ViT-B/16",
+          "prediction": "enneacanthus gloriosus",
+          "confidence": 73.2868,
+          "latency_ms": 375.1,
+          "top5": [
+            {
+              "species": "enneacanthus gloriosus",
+              "confidence": 73.2868
+            },
+            {
+              "species": "scorpaenodes guamensis",
+              "confidence": 3.2575
+            },
+            {
+              "species": "achoerodus_gouldii",
+              "confidence": 1.6127
+            },
+            {
+              "species": "acreichthys_tomentosus",
+              "confidence": 1.4247
+            },
+            {
+              "species": "A73EGS-P",
+              "confidence": 1.1206
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "ConvNeXt Tiny",
+          "prediction": "enneacanthus gloriosus",
+          "confidence": 86.1911,
+          "latency_ms": 204.1,
+          "top5": [
+            {
+              "species": "enneacanthus gloriosus",
+              "confidence": 86.1911
+            },
+            {
+              "species": "A73EGS-P",
+              "confidence": 0.8097
+            },
+            {
+              "species": "acreichthys_tomentosus",
+              "confidence": 0.5866
+            },
+            {
+              "species": "anampses_caeruleopunctatus",
+              "confidence": 0.5846
+            },
+            {
+              "species": "cottus carolinae",
+              "confidence": 0.5825
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "Swin Tiny",
+          "prediction": "enneacanthus gloriosus",
+          "confidence": 68.4114,
+          "latency_ms": 216.8,
+          "top5": [
+            {
+              "species": "enneacanthus gloriosus",
+              "confidence": 68.4114
+            },
+            {
+              "species": "chaenobryttus gulosus",
+              "confidence": 2.0724
+            },
+            {
+              "species": "scorpaenodes guamensis",
+              "confidence": 1.7226
+            },
+            {
+              "species": "acreichthys_tomentosus",
+              "confidence": 1.4727
+            },
+            {
+              "species": "lepomis marginatus",
+              "confidence": 1.3853
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "MobileNetV3",
+          "prediction": "enneacanthus gloriosus",
+          "confidence": 25.5327,
+          "latency_ms": 105.3,
+          "top5": [
+            {
+              "species": "enneacanthus gloriosus",
+              "confidence": 25.5327
+            },
+            {
+              "species": "anampses_caeruleopunctatus",
+              "confidence": 12.9715
+            },
+            {
+              "species": "scorpaenodes guamensis",
+              "confidence": 7.7986
+            },
+            {
+              "species": "A73EGS-P",
+              "confidence": 6.7926
+            },
+            {
+              "species": "anampses_lennardi",
+              "confidence": 5.7151
+            }
+          ],
+          "in_canonical_classes": true
+        }
+      ]
+    },
+    {
+      "specimen_index": 7,
+      "filename": "lepomis_macrochirus_sample.jpg",
+      "ground_truth_class": "lepomis macrochirus",
+      "ground_truth_common": "Lepomis macrochirus",
+      "consensus_species": "lepomis macrochirus",
+      "agreement_count": 5,
+      "is_unanimous": true,
+      "agreeing_models": [
+        "DINOv2",
+        "ViT-B/16",
+        "ConvNeXt Tiny",
+        "Swin Tiny",
+        "MobileNetV3"
+      ],
+      "disagreeing_models": [],
+      "total_latency_ms": 2029.3,
+      "models": [
+        {
+          "model": "DINOv2",
+          "prediction": "lepomis macrochirus",
+          "confidence": 99.992,
+          "latency_ms": 1328.2,
+          "top5": [
+            {
+              "species": "lepomis macrochirus",
+              "confidence": 99.992
+            },
+            {
+              "species": "lepomis microlophus",
+              "confidence": 0.0057
+            },
+            {
+              "species": "lepomis",
+              "confidence": 0.002
+            },
+            {
+              "species": "lythrurus umbratilis",
+              "confidence": 0.0001
+            },
+            {
+              "species": "notropis rubricroceus",
+              "confidence": 0.0001
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "ViT-B/16",
+          "prediction": "lepomis macrochirus",
+          "confidence": 61.0761,
+          "latency_ms": 358.7,
+          "top5": [
+            {
+              "species": "lepomis macrochirus",
+              "confidence": 61.0761
+            },
+            {
+              "species": "lepomis microlophus",
+              "confidence": 3.6709
+            },
+            {
+              "species": "lepomis miniatus",
+              "confidence": 1.8928
+            },
+            {
+              "species": "alectis_indica",
+              "confidence": 1.4911
+            },
+            {
+              "species": "anampses_lennardi",
+              "confidence": 1.3228
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "ConvNeXt Tiny",
+          "prediction": "lepomis macrochirus",
+          "confidence": 76.4352,
+          "latency_ms": 115.6,
+          "top5": [
+            {
+              "species": "lepomis macrochirus",
+              "confidence": 76.4352
+            },
+            {
+              "species": "lepomis humilis",
+              "confidence": 3.6593
+            },
+            {
+              "species": "lepomis microlophus",
+              "confidence": 1.8307
+            },
+            {
+              "species": "acanthaluteres_spilomelanurus",
+              "confidence": 0.9358
+            },
+            {
+              "species": "alectis_indica",
+              "confidence": 0.8248
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "Swin Tiny",
+          "prediction": "lepomis macrochirus",
+          "confidence": 70.5961,
+          "latency_ms": 181.5,
+          "top5": [
+            {
+              "species": "lepomis macrochirus",
+              "confidence": 70.5961
+            },
+            {
+              "species": "lepomis microlophus",
+              "confidence": 7.7068
+            },
+            {
+              "species": "lepomis gibbosus",
+              "confidence": 1.3952
+            },
+            {
+              "species": "neogobius melanostomus",
+              "confidence": 1.2588
+            },
+            {
+              "species": "lepomis humilis",
+              "confidence": 1.1871
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "MobileNetV3",
+          "prediction": "lepomis macrochirus",
+          "confidence": 48.1261,
+          "latency_ms": 45.3,
+          "top5": [
+            {
+              "species": "lepomis macrochirus",
+              "confidence": 48.1261
+            },
+            {
+              "species": "lepomis microlophus",
+              "confidence": 24.0418
+            },
+            {
+              "species": "lepomis humilis",
+              "confidence": 8.9628
+            },
+            {
+              "species": "lepomis gibbosus",
+              "confidence": 4.4778
+            },
+            {
+              "species": "lepomis megalotis",
+              "confidence": 1.8289
+            }
+          ],
+          "in_canonical_classes": true
+        }
+      ]
+    },
+    {
+      "specimen_index": 8,
+      "filename": "notropis_anogenus_sample.jpg",
+      "ground_truth_class": "notropis anogenus",
+      "ground_truth_common": "Notropis anogenus",
+      "consensus_species": "notropis anogenus",
+      "agreement_count": 5,
+      "is_unanimous": true,
+      "agreeing_models": [
+        "DINOv2",
+        "ViT-B/16",
+        "ConvNeXt Tiny",
+        "Swin Tiny",
+        "MobileNetV3"
+      ],
+      "disagreeing_models": [],
+      "total_latency_ms": 2035.4,
+      "models": [
+        {
+          "model": "DINOv2",
+          "prediction": "notropis anogenus",
+          "confidence": 98.2773,
+          "latency_ms": 1426.4,
+          "top5": [
+            {
+              "species": "notropis anogenus",
+              "confidence": 98.2773
+            },
+            {
+              "species": "notropis heterodon",
+              "confidence": 1.6947
+            },
+            {
+              "species": "notropis chalybaeus",
+              "confidence": 0.0196
+            },
+            {
+              "species": "notropis bifrenatus",
+              "confidence": 0.0059
+            },
+            {
+              "species": "notropis nubilus",
+              "confidence": 0.0022
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "ViT-B/16",
+          "prediction": "notropis anogenus",
+          "confidence": 8.822,
+          "latency_ms": 317.8,
+          "top5": [
+            {
+              "species": "notropis anogenus",
+              "confidence": 8.822
+            },
+            {
+              "species": "notropis bifrenatus",
+              "confidence": 5.5204
+            },
+            {
+              "species": "cyprinella lutrensis",
+              "confidence": 4.8433
+            },
+            {
+              "species": "alectis_ciliaris",
+              "confidence": 4.601
+            },
+            {
+              "species": "anampses_twistii",
+              "confidence": 3.3152
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "ConvNeXt Tiny",
+          "prediction": "notropis anogenus",
+          "confidence": 34.183,
+          "latency_ms": 123.0,
+          "top5": [
+            {
+              "species": "notropis anogenus",
+              "confidence": 34.183
+            },
+            {
+              "species": "acanthopagrus_australis",
+              "confidence": 3.0364
+            },
+            {
+              "species": "acanthaluteres_spilomelanurus",
+              "confidence": 2.5942
+            },
+            {
+              "species": "achoerodus_gouldii",
+              "confidence": 2.3953
+            },
+            {
+              "species": "anampses_femininus",
+              "confidence": 2.2716
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "Swin Tiny",
+          "prediction": "notropis anogenus",
+          "confidence": 25.7745,
+          "latency_ms": 139.0,
+          "top5": [
+            {
+              "species": "notropis anogenus",
+              "confidence": 25.7745
+            },
+            {
+              "species": "cyprinella lutrensis",
+              "confidence": 9.0106
+            },
+            {
+              "species": "notropis chalybaeus",
+              "confidence": 8.1037
+            },
+            {
+              "species": "chaenobryttus gulosus",
+              "confidence": 7.2253
+            },
+            {
+              "species": "notropis rubellus",
+              "confidence": 4.0682
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "MobileNetV3",
+          "prediction": "notropis anogenus",
+          "confidence": 19.6962,
+          "latency_ms": 29.2,
+          "top5": [
+            {
+              "species": "notropis anogenus",
+              "confidence": 19.6962
+            },
+            {
+              "species": "cyprinella lutrensis",
+              "confidence": 7.5855
+            },
+            {
+              "species": "notropis chihuahua",
+              "confidence": 5.0974
+            },
+            {
+              "species": "notropis blennius",
+              "confidence": 2.5813
+            },
+            {
+              "species": "luxilus cornutus",
+              "confidence": 2.5636
+            }
+          ],
+          "in_canonical_classes": true
+        }
+      ]
+    },
+    {
+      "specimen_index": 9,
+      "filename": "notropis_micropteryx_sample.jpg",
+      "ground_truth_class": "notropis micropteryx",
+      "ground_truth_common": "Notropis micropteryx",
+      "consensus_species": "notropis micropteryx",
+      "agreement_count": 4,
+      "is_unanimous": false,
+      "agreeing_models": [
+        "DINOv2",
+        "ViT-B/16",
+        "ConvNeXt Tiny",
+        "Swin Tiny"
+      ],
+      "disagreeing_models": [
+        {
+          "model": "MobileNetV3",
+          "predicted": "chrosomus erythrogaster",
+          "confidence": 8.8962
+        }
+      ],
+      "total_latency_ms": 3887.4,
+      "models": [
+        {
+          "model": "DINOv2",
+          "prediction": "notropis micropteryx",
+          "confidence": 99.9293,
+          "latency_ms": 1921.0,
+          "top5": [
+            {
+              "species": "notropis micropteryx",
+              "confidence": 99.9293
+            },
+            {
+              "species": "notropis blennius",
+              "confidence": 0.0254
+            },
+            {
+              "species": "notropis telescopus",
+              "confidence": 0.0215
+            },
+            {
+              "species": "notropis rubellus",
+              "confidence": 0.0104
+            },
+            {
+              "species": "notropis percobromus",
+              "confidence": 0.0059
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "ViT-B/16",
+          "prediction": "notropis micropteryx",
+          "confidence": 44.3633,
+          "latency_ms": 891.1,
+          "top5": [
+            {
+              "species": "notropis micropteryx",
+              "confidence": 44.3633
+            },
+            {
+              "species": "notropis percobromus",
+              "confidence": 3.5635
+            },
+            {
+              "species": "acanthaluteres_brownii",
+              "confidence": 2.6534
+            },
+            {
+              "species": "anampses_neoguinaicus",
+              "confidence": 2.4774
+            },
+            {
+              "species": "alectis_indica",
+              "confidence": 2.2941
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "ConvNeXt Tiny",
+          "prediction": "notropis micropteryx",
+          "confidence": 46.6358,
+          "latency_ms": 374.4,
+          "top5": [
+            {
+              "species": "notropis micropteryx",
+              "confidence": 46.6358
+            },
+            {
+              "species": "anampses_twistii",
+              "confidence": 3.9305
+            },
+            {
+              "species": "alectis_indica",
+              "confidence": 2.6196
+            },
+            {
+              "species": "acanthistius_cinctus",
+              "confidence": 2.3423
+            },
+            {
+              "species": "ericymba buccata",
+              "confidence": 1.9061
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "Swin Tiny",
+          "prediction": "notropis micropteryx",
+          "confidence": 37.3134,
+          "latency_ms": 597.7,
+          "top5": [
+            {
+              "species": "notropis micropteryx",
+              "confidence": 37.3134
+            },
+            {
+              "species": "chrosomus erythrogaster",
+              "confidence": 18.6201
+            },
+            {
+              "species": "notropis percobromus",
+              "confidence": 6.5504
+            },
+            {
+              "species": "notropis rubricroceus",
+              "confidence": 3.8168
+            },
+            {
+              "species": "notropis telescopus",
+              "confidence": 2.9305
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "MobileNetV3",
+          "prediction": "chrosomus erythrogaster",
+          "confidence": 8.8962,
+          "latency_ms": 103.2,
+          "top5": [
+            {
+              "species": "chrosomus erythrogaster",
+              "confidence": 8.8962
+            },
+            {
+              "species": "notropis telescopus",
+              "confidence": 8.8199
+            },
+            {
+              "species": "notropis atherinoides",
+              "confidence": 7.961
+            },
+            {
+              "species": "chrosomus eos",
+              "confidence": 4.7595
+            },
+            {
+              "species": "lepomis gibbosus",
+              "confidence": 4.3648
+            }
+          ],
+          "in_canonical_classes": true
+        }
+      ]
+    },
+    {
+      "specimen_index": 10,
+      "filename": "noturus_gyrinus_sample.jpg",
+      "ground_truth_class": "noturus gyrinus",
+      "ground_truth_common": "Noturus gyrinus",
+      "consensus_species": "noturus gyrinus",
+      "agreement_count": 5,
+      "is_unanimous": true,
+      "agreeing_models": [
+        "DINOv2",
+        "ViT-B/16",
+        "ConvNeXt Tiny",
+        "Swin Tiny",
+        "MobileNetV3"
+      ],
+      "disagreeing_models": [],
+      "total_latency_ms": 6010.1,
+      "models": [
+        {
+          "model": "DINOv2",
+          "prediction": "noturus gyrinus",
+          "confidence": 99.9882,
+          "latency_ms": 4100.3,
+          "top5": [
+            {
+              "species": "noturus gyrinus",
+              "confidence": 99.9882
+            },
+            {
+              "species": "noturus miurus",
+              "confidence": 0.0072
+            },
+            {
+              "species": "noturus exilis",
+              "confidence": 0.0032
+            },
+            {
+              "species": "lepomis cyanellus",
+              "confidence": 0.0007
+            },
+            {
+              "species": "noturus nocturnus",
+              "confidence": 0.0004
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "ViT-B/16",
+          "prediction": "noturus gyrinus",
+          "confidence": 49.1101,
+          "latency_ms": 963.5,
+          "top5": [
+            {
+              "species": "noturus gyrinus",
+              "confidence": 49.1101
+            },
+            {
+              "species": "alectis_indica",
+              "confidence": 4.5593
+            },
+            {
+              "species": "acanthaluteres_spilomelanurus",
+              "confidence": 4.0226
+            },
+            {
+              "species": "noturus flavus",
+              "confidence": 3.7247
+            },
+            {
+              "species": "noturus exilis",
+              "confidence": 3.1965
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "ConvNeXt Tiny",
+          "prediction": "noturus gyrinus",
+          "confidence": 70.8446,
+          "latency_ms": 317.7,
+          "top5": [
+            {
+              "species": "noturus gyrinus",
+              "confidence": 70.8446
+            },
+            {
+              "species": "noturus miurus",
+              "confidence": 2.6521
+            },
+            {
+              "species": "noturus flavus",
+              "confidence": 2.2973
+            },
+            {
+              "species": "mystus pulcher",
+              "confidence": 2.1016
+            },
+            {
+              "species": "noturus nocturnus",
+              "confidence": 1.3321
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "Swin Tiny",
+          "prediction": "noturus gyrinus",
+          "confidence": 41.3344,
+          "latency_ms": 555.7,
+          "top5": [
+            {
+              "species": "noturus gyrinus",
+              "confidence": 41.3344
+            },
+            {
+              "species": "noturus flavus",
+              "confidence": 17.4384
+            },
+            {
+              "species": "noturus exilis",
+              "confidence": 9.5806
+            },
+            {
+              "species": "noturus miurus",
+              "confidence": 9.2362
+            },
+            {
+              "species": "noturus nocturnus",
+              "confidence": 4.7507
+            }
+          ],
+          "in_canonical_classes": true
+        },
+        {
+          "model": "MobileNetV3",
+          "prediction": "noturus gyrinus",
+          "confidence": 25.4944,
+          "latency_ms": 72.9,
+          "top5": [
+            {
+              "species": "noturus gyrinus",
+              "confidence": 25.4944
+            },
+            {
+              "species": "noturus flavus",
+              "confidence": 22.1419
+            },
+            {
+              "species": "chrosomus erythrogaster",
+              "confidence": 4.7173
+            },
+            {
+              "species": "noturus exilis",
+              "confidence": 4.6102
+            },
+            {
+              "species": "lepomis humilis",
+              "confidence": 3.7764
+            }
+          ],
+          "in_canonical_classes": true
+        }
+      ]
+    }
+  ]
+}

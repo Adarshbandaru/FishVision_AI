@@ -1,0 +1,52 @@
+{
+  "dataset": {
+    "classes": 152,
+    "train": 15305,
+    "validation": 4127,
+    "test": 3309,
+    "total": 22741
+  },
+  "metrics": [
+    {
+      "model": "DINOv2",
+      "accuracy": 93.8954,
+      "macro_precision": 88.2366,
+      "macro_recall": 87.3145,
+      "macro_f1": 86.9592,
+      "weighted_f1": null
+    },
+    {
+      "model": "ViT-B/16",
+      "accuracy": 88.3348,
+      "macro_precision": 80.0143,
+      "macro_recall": 81.3011,
+      "macro_f1": 78.8563,
+      "weighted_f1": 88.478
+    },
+    {
+      "model": "ConvNeXt Tiny",
+      "accuracy": 87.398,
+      "macro_precision": 79.8363,
+      "macro_recall": 79.0629,
+      "macro_f1": 77.5887,
+      "weighted_f1": 87.5096
+    },
+    {
+      "model": "Swin Tiny",
+      "accuracy": 85.1315,
+      "macro_precision": 78.0993,
+      "macro_recall": 76.3637,
+      "macro_f1": 75.6324,
+      "weighted_f1": 85.1313
+    },
+    {
+      "model": "MobileNetV3",
+      "accuracy": 70.3234,
+      "macro_precision": 59.4439,
+      "macro_recall": 58.9083,
+      "macro_f1": 57.36,
+      "weighted_f1": 69.8887
+    }
+  ],
+  "note": "Frozen test metrics from FishVision V2 corrected final report. DINOv2 weighted F1 unavailable."
+}

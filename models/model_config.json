@@ -1,0 +1,51 @@
+{
+  "repo_id": "bandaruadarsh/fishvision-final-experiment",
+  "repo_type": "model",
+  "num_classes": 152,
+  "models": [
+    {
+      "key": "DINOv2",
+      "name": "DINOv2",
+      "architecture": "vit_base_patch14_reg4_dinov2.lvd142m",
+      "filename": "checkpoints/DINOv2_MasterBest_152.pth",
+      "image_size": 518,
+      "transform": "resize_square"
+    },
+    {
+      "key": "ViT-B/16",
+      "name": "ViT-B/16",
+      "architecture": "vit_base_patch16_224",
+      "filename": "checkpoints/ViT_B16_V2_Best_152.pth",
+      "image_size": 224,
+      "transform": "resize_square"
+    },
+    {
+      "key": "ConvNeXt Tiny",
+      "name": "ConvNeXt Tiny",
+      "architecture": "convnext_tiny",
+      "filename": "checkpoints/ConvNeXt_Tiny_Best_152.pth",
+      "image_size": 224,
+      "transform": "resize_square"
+    },
+    {
+      "key": "Swin Tiny",
+      "name": "Swin Tiny",
+      "architecture": "swin_tiny_patch4_window7_224",
+      "filename": "checkpoints/Swin_Tiny_Best_152.pth",
+      "image_size": 224,
+      "transform": "resize_square"
+    },
+    {
+      "key": "MobileNetV3",
+      "name": "MobileNetV3",
+      "architecture": "mobilenetv3_large_100",
+      "filename": "checkpoints/MobileNetV3_Best_152.pth",
+      "image_size": 224,
+      "transform": "resize_square"
+    }
+  ],
+  "class_mapping_candidates": [
+    "data/class_mapping.json",
+    "final_deployment_package/class_mapping.json"
+  ]
+}

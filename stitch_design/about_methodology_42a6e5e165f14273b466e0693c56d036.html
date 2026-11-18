@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary-container":"#0063a1","inverse-surface":"#dbe2f8","on-error-container":"#ffdad6","on-surface":"#dbe2f8","surface-container-low":"#141c2b","on-background":"#dbe2f8","on-tertiary":"#003256","surface-bright":"#31394a","outline-variant":"#3a494b","surface-dim":"#0b1322","on-secondary-container":"#00554b","on-tertiary-fixed-variant":"#004a7a","primary-container":"#00f2fe","secondary":"#47efd6","surface-container-lowest":"#060e1d","outline":"#849495","surface-variant":"#2d3545","on-error":"#690005","on-primary-container":"#006a70","surface-container":"#18202f","on-tertiary-fixed":"#001d34","surface-container-high":"#222a3a","primary-fixed":"#6ff6ff","error":"#ffb4ab","primary":"#e0fdff","surface-container-highest":"#2d3545","inverse-on-surface":"#293041","background":"#0b1322","surface-tint":"#00dce6","on-secondary":"#003730","surface":"#0b1322","tertiary-fixed-dim":"#9bcbff","on-secondary-fixed-variant":"#005046","secondary-container":"#03d2ba","tertiary-fixed":"#d0e4ff","secondary-fixed-dim":"#2adec5","tertiary-container":"#c1ddff","secondary-fixed":"#57fbe1","tertiary":"#f4f7ff","on-primary-fixed":"#002022","inverse-primary":"#00696f","on-surface-variant":"#b9cacb","on-secondary-fixed":"#00201b","on-primary":"#00373a","error-container":"#93000a","on-primary-fixed-variant":"#004f53","primary-fixed-dim":"#00dce6"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-2xl":"3.5rem","space-xl":"2.25rem","space-md":"1rem","gutter":"1.25rem","margin-lg":"2.5rem","margin-md":"1.75rem","margin":"1rem","space-sm":"0.5rem","space-lg":"1.5rem","space-xs":"0.25rem","gutter-lg":"1.75rem"},fontFamily:{"display-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"telemetry-metric":["JetBrains Mono"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-sm":["JetBrains Mono"],"label-md":["JetBrains Mono"],"label-lg":["JetBrains Mono"],"body-lg":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"]},fontSize:{"display-lg":["48px",{lineHeight:"56px",letterSpacing:"-0.03em",fontWeight:"700"}],"body-md":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"telemetry-metric":["28px",{lineHeight:"32px",letterSpacing:"-0.04em",fontWeight:"700"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-md":["22px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-sm":["10px",{lineHeight:"14px",letterSpacing:"0.05em",fontWeight:"500"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"500"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"-0.01em",fontWeight:"500"}],"body-lg":["16px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"display-lg-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-sm":["18px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"400"}]}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-16 w-full px-margin-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><img alt="FishVision AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDFW3usyqHSH92zzqip5FGmI_y31A5waZ-L1aizXlNkzXA96V-_ARGFiRO6LQbRedF4mIsdDyfVSmQoMjBTHLDkMqbILqkPLYNpTRMZ7pwQ1lay-K1XqORobyulhHwo641X3egjwdoq-xaTvCBrZfI_8mLc8TkgOQfm2pzcvd33pveGJGGyYl03zPqcHtIq24TbCB2883LT_8nJSboRGXJUL1pNGAF4ZpRFSR-b6YyH"/><div class="flex items-baseline gap-space-sm"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary">FishVision<span class="text-secondary font-mono text-label-md ml-space-xs font-semibold">AI</span></span><span class="font-label-sm text-label-sm font-semibold uppercase px-space-xs py-0.5 rounded bg-surface-container-high text-secondary border border-outline-variant/40 tracking-wider">v2.4-academic</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-surface-container-highest text-primary font-semibold rounded-lg shadow-[0_0_12px_rgba(0,242,254,0.15)]"><a class="font-body-md text-body-md px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors whitespace-nowrap" data-path="dashboard" href="#">Dashboard</a><a class="font-body-md text-body-md px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors whitespace-nowrap" data-path="recognition-workspace" href="#">Recognition Workspace</a><a class="font-body-md text-body-md px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors whitespace-nowrap" data-path="species-catalog" href="#">Species Catalog</a><a class="font-body-md text-body-md px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors whitespace-nowrap" data-path="model-comparison" href="#">Model Comparison</a><a class="font-body-md text-body-md px-space-sm py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors whitespace-nowrap" data-path="prediction-history" href="#">Prediction History</a><a aria-current="page" class="px-space-sm py-1.5 transition-colors whitespace-nowrap bg-surface-container-highest text-primary font-semibold rounded-lg shadow-[0_0_12px_rgba(0,242,254,0.15)]" data-path="about-project" href="#">About Project</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-lowest border border-outline-variant/50 shadow-inner"><span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface font-medium">5 Models Online</span><span class="font-label-sm text-label-sm text-outline mx-0.5">|</span><span class="font-label-sm text-label-sm text-secondary font-mono">18ms</span></div><div class="hidden lg:flex items-center px-space-sm py-1 rounded bg-surface-container-high border border-outline-variant/40"><span class="font-label-sm text-label-sm font-mono text-primary font-semibold">CUDA / PyTorch 2.3</span></div><div class="hidden 2xl:flex items-center px-space-sm py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm border border-outline-variant/30"><span class="material-symbols-outlined text-[14px] mr-1 text-secondary">biotech</span>Marine AI Lab</div><a aria-label="Documentation and Source Repository" class="p-1.5 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center" href="https://github.com" rel="noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px]">code</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-4rem)]"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow Orbs -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 left-1/4 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-1/2 -right-20 w-80 h-80 bg-secondary-container/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<!-- Academic Header Section -->
+<section class="w-full px-margin-lg pt-space-xl pb-space-2xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase px-2.5 py-1 rounded bg-surface-container-high text-secondary border-0 font-medium tracking-wider">Research Whitepaper</span>
+<span class="text-outline font-label-sm text-label-sm">/</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">ARXIV:2405.11892v2 [cs.CV]</span>
+<span class="text-outline font-label-sm text-label-sm">/</span>
+<span class="font-label-sm text-label-sm text-primary font-mono flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container animate-pulse"></span>
+            Peer-Reviewed Evaluation
+          </span>
+</div>
+<div class="flex flex-col gap-space-sm max-w-4xl">
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight font-bold">
+            About FishVision AI — Intelligent Marine Taxon Recognition
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            A multi-model deep learning research platform developed for automated fish species identification in marine ecological monitoring and fisheries research.
+          </p>
+</div>
+<!-- Metric Anchor Ribbon -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md pt-space-sm">
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-sm flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline uppercase font-mono tracking-wider">Annotated Taxa</span>
+<span class="font-telemetry-metric text-telemetry-metric text-primary font-mono font-bold">152 <span class="text-body-sm font-sans text-secondary font-normal">classes</span></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Standardized morphological hierarchy</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-sm flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline uppercase font-mono tracking-wider">Multi-Spectral Archive</span>
+<span class="font-telemetry-metric text-telemetry-metric text-primary font-mono font-bold">22,741 <span class="text-body-sm font-sans text-secondary font-normal">images</span></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Triple-validated scientific archives</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-sm flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline uppercase font-mono tracking-wider">Benchmark Models</span>
+<span class="font-telemetry-metric text-telemetry-metric text-primary font-mono font-bold">5 <span class="text-body-sm font-sans text-secondary font-normal">architectures</span></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">ViT, ConvNeXt, Swin, MobileNet, DINO</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-sm flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline uppercase font-mono tracking-wider">Avg Latency (FP16)</span>
+<span class="font-telemetry-metric text-telemetry-metric text-secondary font-mono font-bold">14.2 <span class="text-body-sm font-sans text-outline font-normal">ms</span></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Edge AUV throughput benchmark</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 1: Overview & Scientific Motivation -->
+<section class="w-full px-margin-lg py-space-xl bg-surface-container-lowest/60">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-mono uppercase tracking-widest">// SECTION 01</span>
+<h2 class="font-headline-md text-headline-md text-primary font-bold mt-1">Project Overview &amp; Scientific Motivation</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+            Bridging fine-grained taxonomic expertise and high-throughput autonomy in degraded, turbid marine environments.
+          </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Text Narrative Card -->
+<div class="lg:col-span-7 bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between gap-space-lg shadow-sm">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[20px]">science</span>
+<span class="font-semibold uppercase tracking-wider">The Ecological Imperative</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+                Marine biodiversity monitoring requires rapid, non-destructive taxonomic classification. Traditional manual taxonomy is time-intensive and demands specialized taxonomic expertise, posing an acute bottleneck for global ocean conservation programs.
+              </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                FishVision AI bridges this gap with deep-learning vision models trained on stratified aquatic datasets. Underwater computer vision presents distinct physical challenges: severe chromatic aberration, wavelength-dependent light attenuation, floating particulate turbidity ("marine snow"), and complex non-rigid morphological deformities in dynamic pelagic environments.
+              </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm pt-space-sm">
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline font-mono">NON-DESTRUCTIVE</span>
+<span class="font-body-sm text-body-sm font-medium text-primary">In-situ Stereo Imagery</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline font-mono">LATENCY CRITICAL</span>
+<span class="font-body-sm text-body-sm font-medium text-primary">ROV Autonomous Steer</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline font-mono">CROSS-BASIN</span>
+<span class="font-body-sm text-body-sm font-medium text-primary">Pelagic &amp; Reef Taxa</span>
+</div>
+</div>
+</div>
+<!-- Research Contributions Bento -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Contribution 1 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-start gap-space-md hover:bg-surface-container transition-colors shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-secondary font-mono font-bold text-label-lg">
+                01
+              </div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">ViT vs. ConvNet Empirical Baseline</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Systematic comparative benchmark of Vision Transformers against cutting-edge modern ConvNets on fine-grained marine species across differing underwater visibility strata.
+                </p>
+</div>
+</div>
+<!-- Contribution 2 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-start gap-space-md hover:bg-surface-container transition-colors shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-secondary font-mono font-bold text-label-lg">
+                02
+              </div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Consensus Voting Framework</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Softmax entropy ensemble and bayesian consensus framework to suppress single-model hallucinations and overconfident predictions caused by turbidity and occlusion.
+                </p>
+</div>
+</div>
+<!-- Contribution 3 -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-start gap-space-md hover:bg-surface-container transition-colors shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0 text-secondary font-mono font-bold text-label-lg">
+                03
+              </div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Edge-to-HPC Inference Pipeline</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Universal execution profile scaling from dense cluster multi-GPU training nodes down to power-constrained micro-edge deployments on autonomous underwater vehicles.
+                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Dataset Specifications & Curation Pipeline -->
+<section class="w-full px-margin-lg py-space-xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-mono uppercase tracking-widest">// SECTION 02</span>
+<h2 class="font-headline-md text-headline-md text-primary font-bold mt-1">Dataset Specifications &amp; Curation Pipeline</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">
+            Rigorous stratification across 22,741 curated specimens with calibrated photogrammetry and synthetic physical light-scatter augmentation.
+          </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Split Diagram Card -->
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between gap-space-md shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm font-mono text-outline uppercase">Stratification Topology</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Dataset Split Breakdown</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Class-balanced non-overlapping split by survey transect.</p>
+</div>
+<!-- Custom Data Viz Bar -->
+<div class="flex flex-col gap-space-sm my-auto">
+<div class="h-6 w-full rounded-md overflow-hidden flex bg-surface-container-highest shadow-inner">
+<div class="h-full bg-secondary-container transition-all hover:brightness-110" style="width: 70%" title="Training (70%)"></div>
+<div class="h-full bg-primary-container transition-all hover:brightness-110" style="width: 10%" title="Validation (10%)"></div>
+<div class="h-full bg-surface-bright transition-all hover:brightness-110" style="width: 20%" title="Held-Out Test (20%)"></div>
+</div>
+<div class="flex flex-col gap-2 pt-space-xs font-mono text-body-sm">
+<div class="flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-sm bg-secondary-container"></span>
+<span>Training Set (70%)</span>
+</div>
+<span class="text-secondary font-semibold">15,919 samples</span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-sm bg-primary-container"></span>
+<span>Validation Set (10%)</span>
+</div>
+<span class="text-primary font-semibold">2,274 samples</span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-sm bg-surface-bright"></span>
+<span>Held-Out Test (20%)</span>
+</div>
+<span class="text-on-surface-variant font-semibold">4,548 samples</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container p-space-sm rounded-lg text-label-sm font-mono text-outline">
+              Integrity Check: Zero transect overlap between Train and Test sets.
+            </div>
+</div>
+<!-- Primary Curation Sources -->
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between gap-space-md shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm font-mono text-outline uppercase">Specimen Ingestion</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Provenance &amp; Validation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Triple-tiered verification protocol for ground-truth taxonomic accuracy.</p>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container/70">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">scuba_diving</span>
+<div>
+<h4 class="font-label-md text-label-md text-primary font-semibold">Scientific Underwater Surveys</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Calibrated stereo photogrammetric surveys conducted by oceanic marine institutes.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container/70">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">verified_user</span>
+<div>
+<h4 class="font-label-md text-label-md text-primary font-semibold">iNaturalist Research-Grade</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Citizen science observations with multi-expert consensus and geo-tag coordinates.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container/70">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">museum</span>
+<div>
+<h4 class="font-label-md text-label-md text-primary font-semibold">Museum Ichthyology Archives</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">High-fidelity cataloged specimens from national natural history archives.</p>
+</div>
+</div>
+</div>
+<div class="font-label-sm text-label-sm font-mono text-secondary">
+              Coverage: 152 Taxa across 34 Marine Families
+            </div>
+</div>
+<!-- Augmentation Pipeline -->
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between gap-space-md shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm font-mono text-outline uppercase">Synthetic Augmentation</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Aquatic Physical Simulation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Albumentations pipeline replicating underwater optical physics.</p>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container/50">
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-md text-label-md text-primary font-mono font-medium">Chromatic Wavelength Attenuation</span>
+<span class="font-label-sm text-label-sm font-mono text-secondary">p=0.80</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Simulates selective red light absorption at 5m-30m depths.</p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container/50">
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-md text-label-md text-primary font-mono font-medium">Backscatter &amp; Turbidity Blur</span>
+<span class="font-label-sm text-label-sm font-mono text-secondary">p=0.65</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Synthetic particulates simulating sediment suspension and plankton bloom.</p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container/50">
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-md text-label-md text-primary font-mono font-medium">Multi-scale Random Resized Crop</span>
+<span class="font-label-sm text-label-sm font-mono text-secondary">scale=(0.4, 1.0)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Simulates distance variation and edge-of-frame partial fish occlusion.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-outline font-label-sm text-label-sm font-mono">
+<span class="material-symbols-outlined text-[16px] text-secondary">tune</span>
+              Pipeline: Albumentations v1.4.15 (GPU Batch Kernel)
+            </div>
+</div>
+</div>
+<!-- Sample Specimen Inspection Mosaic -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-space-sm">
+<div class="relative rounded-xl overflow-hidden bg-surface-container group h-48">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="High-contrast underwater macro photo of an Amphiprion ocellaris clownfish nestled inside vibrant sea anemone tentacles in pristine deep ocean blue water with natural sunlight caustic reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2dVcpdhdWlP1bKRv_6ZMMMcvI-oAiR4lmRJVH2WfUuDq7q-4MV0byPW_HTZ_CKRmeDpmN8GA41DTfTNjnnI-zqHNpMmlyMwaBaaarhViMH8vj603gtJHKzg0ocLOXM5zXhDOHgYq7huxLX-DwgXBm4szJn6dQAnHyV1E78dDDyAqT7bRnl7qBxOexMNdKndzqZDmHG_YPj_I2Rw1IkRgzdT2n74YydvzO_OuyVJ4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-surface-dim/30 to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 flex justify-between items-end">
+<div>
+<span class="font-label-sm text-label-sm font-mono text-secondary">TAXON-ID #042</span>
+<div class="font-headline-sm text-headline-sm text-primary italic font-semibold">Amphiprion ocellaris</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest/80 text-primary font-mono text-label-sm">Depth: 12m</span>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden bg-surface-container group h-48">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Scientific ROV subsea observation shot of a Chaetodon auriga threadfin butterflyfish traversing a coral shelf with diffuse light scattering and blue-green oceanic tint" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVZVIy_dlOLK6DMCfQ5f49CgPL90XP7B5UIcAc6EQH1f3gPZErieNdEnnTf6cUPi3gVTpGjf-OLKXvnVqCDVBBmVSGglCZ5SPJG65KuA1aVRh9xV5J4Byx-72fniX7zcD9bKc3y1zDXuW0ox6_xWKQm7fzq6SEbXw9B0rYsQwEOWQJ-8mP-fCoHnnoz8n0OpKFvf_NNyjitaYY6sNj-5BnIzE48pXGA9gwmCyvnbM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-surface-dim/30 to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 flex justify-between items-end">
+<div>
+<span class="font-label-sm text-label-sm font-mono text-secondary">TAXON-ID #119</span>
+<div class="font-headline-sm text-headline-sm text-primary italic font-semibold">Chaetodon auriga</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest/80 text-primary font-mono text-label-sm">Depth: 22m</span>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden bg-surface-container group h-48">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Marine research specimen photograph of Epinephelus marginatus dusky grouper in a deep rocky reef crevice with backscattering marine particles and deep pelagic color grading" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAROjcyoQxNn_T-xLI2qV0M0lui9pJEVUHAUKdjBAotlhj7UDRG226fiCxnFGjkEtf38CxEfEUoTXgZfC7xYtQjGz_982bo53KJkTvoBqx5-4t-itO9SoieBKJcKws8KAkKabvLOPUXTG4zPYnB9WMHHIamtoBWTcwu16Ry3WwsB6qp-sdy_wAEvuFNTonDsK6BiVSYAWefnr8fCuN-oX87ngB5sRko_1Pk4N-DQ90"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-surface-dim/30 to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 flex justify-between items-end">
+<div>
+<span class="font-label-sm text-label-sm font-mono text-secondary">TAXON-ID #087</span>
+<div class="font-headline-sm text-headline-sm text-primary italic font-semibold">Epinephelus marginatus</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest/80 text-primary font-mono text-label-sm">Depth: 34m</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: The Five Model Architectures (Deep Dive Technical Cards) -->
+<section class="w-full px-margin-lg py-space-xl bg-surface-container-lowest/60">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-mono uppercase tracking-widest">// SECTION 03</span>
+<h2 class="font-headline-md text-headline-md text-primary font-bold mt-1">The Five Model Architectures</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+            Exhaustive benchmarking spanning foundation self-supervised ViTs, hierarchical window transformers, and ultra-compact edge ConvNets.
+          </p>
+</div>
+<!-- 5 Model Technical Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Model 1: DINOv2 -->
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between gap-space-md shadow-sm border-t-2 border-secondary hover:shadow-xl transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex justify-between items-start">
+<span class="font-label-sm text-label-sm font-mono px-2 py-0.5 rounded bg-secondary-container/20 text-secondary font-semibold">FOUNDATION SOTA</span>
+<span class="font-label-md text-label-md font-mono text-primary">86.6M Params</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">DINOv2 (ViT-B/14)</h3>
+<span class="font-label-sm text-label-sm text-outline font-mono">Self-Supervised Vision Transformer</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Pre-trained via discriminative self-supervised distillation without human labels on 142M uncurated images. Provides exceptional zero-shot clustering and invariant semantic boundaries for camouflage fish under variable underwater turbidity.
+              </p>
+</div>
+<div class="flex flex-col gap-2 pt-space-xs font-mono text-label-sm">
+<div class="flex justify-between text-on-surface">
+<span class="text-outline">Patch Size:</span>
+<span class="text-primary">14 × 14 px</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span class="text-outline">Fine-tuning:</span>
+<span class="text-primary">Linear Probe + Full FT</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span class="text-outline">Top-1 Accuracy:</span>
+<span class="text-secondary font-bold">96.84%</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span class="text-outline">Throughput (T4):</span>
+<span class="text-on-surface-variant">38 img/sec</span>
+</div>
+</div>
+</div>
+<!-- Model 2: Vision Transformer (ViT-B/16) -->
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between gap-space-md shadow-sm border-t-2 border-primary-container hover:shadow-xl transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex justify-between items-start">
+<span class="font-label-sm text-label-sm font-mono px-2 py-0.5 rounded bg-primary-container/20 text-primary-fixed font-semibold">ATTENTION BASELINE</span>
+<span class="font-label-md text-label-md font-mono text-primary">86.4M Params</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">ViT-B/16</h3>
+<span class="font-label-sm text-label-sm text-outline font-mono">Standard Patch Transformer</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Pure transformer architecture treating 16x16 image patches as NLP-like tokens. Excellent at capturing non-local relationships (e.g., dorsal fin spacing relative to caudal fin elongation), though sensitive to high underwater backscatter.
+              </p>
+</div>
+<div class="flex flex-col gap-2 pt-space-xs font-mono text-label-sm">
+<div class="flex justify-between text-on-surface">
+<span class="text-outline">Patch Size:</span>
+<span class="text-primary">16 × 16 px</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span class="text-outline">Embedding Dim:</span>
+<span class="text-primary">768 (12 Heads)</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span class="text-outline">Top-1 Accuracy:</span>
+<span class="text-secondary font-bold">94.12%</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span class="text-outline">Throughput (T4):</span>
+<span class="text-on-surface-variant">44 img/sec</span>
+</div>
+</div>
+</div>
+<!-- Model 3: ConvNeXt Tiny -->
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between gap-space-md shadow-sm border-t-2 border-surface-bright hover:shadow-xl transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex justify-between items-start">
+<span class="font-label-sm text-label-sm font-mono px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-semibold">MODERN CONVNET</span>
+<span class="font-label-md text-label-md font-mono text-primary">28.6M Params</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">ConvNeXt-Tiny</h3>
+<span class="font-label-sm text-label-sm text-outline font-mono">Modernized Convolutional Engine</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Re-engineers standard ResNet with inverted bottlenecks, 7x7 depthwise separable kernels, fewer activation functions, and LayerNorm. Shows strong inductive bias for local fish scale and gill plate texture discernment.
+              </p>
+</div>
+<div class="flex flex-col gap-2 pt-space-xs font-mono text-label-sm">
+<div class="flex justify-between text-on-surface">
+<span class="text-outline">Kernel Geometry:</span>
+<span class="text-primary">7 × 7 Depthwise</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span class="text-outline">Activation:</span>
+<span class="text-primary">GELU with LayerNorm</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span class="text-outline">Top-1 Accuracy:</span>
+<span class="text-secondary font-bold">95.40%</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span class="text-outline">Throughput (T4):</span>
+<span class="text-on-surface-variant">105 img/sec</span>
+</div>
+</div>
+</div>
+<!-- Model 4: Swin Transformer Tiny -->
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between gap-space-md shadow-sm border-t-2 border-surface-bright hover:shadow-xl transition-all">
+<div class="flex flex-col gap-space-sm">
+<div class="flex justify-between items-start">
+<span class="font-label-sm text-label-sm font-mono px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-semibold">HIERARCHICAL VIT</span>
+<span class="font-label-md text-label-md font-mono text-primary">28.3M Params</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">Swin-T</h3>
+<span class="font-label-sm text-label-sm text-outline font-mono">Shifted Window Transformer</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Computes self-attention within non-overlapping local windows while permitting cross-window cross-attention connections. Yields linear computational complexity with respect to input resolution, ideal for panoramic coral reef surveys.
+              </p>
+</div>
+<div class="flex flex-col gap-2 pt-space-xs font-mono text-label-sm">
+<div class="flex justify-between text-on-surface">
+<span class="text-outline">Window Shift:</span>
+<span class="text-primary">7 × 7 Shifted Windows</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span class="text-outline">Complexity:</span>
+<span class="text-primary">Linear O(M)</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span class="text-outline">Top-1 Accuracy:</span>
+<span class="text-secondary font-bold">94.78%</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span class="text-outline">Throughput (T4):</span>
+<span class="text-on-surface-variant">92 img/sec</span>
+</div>
+</div>
+</div>
+<!-- Model 5: MobileNetV3 Large -->
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between gap-space-md shadow-sm border-t-2 border-secondary-container hover:shadow-xl transition-all lg:col-span-2">
+<div class="flex flex-col md:flex-row justify-between gap-space-md">
+<div class="flex flex-col gap-space-sm max-w-lg">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm font-mono px-2 py-0.5 rounded bg-secondary-container/20 text-secondary font-semibold">AUV EDGE ACCELERATOR</span>
+<span class="font-label-md text-label-md font-mono text-primary">5.4M Params</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">MobileNetV3-Large</h3>
+<span class="font-label-sm text-label-sm text-outline font-mono">Hardware-Aware NAS Optimized Backbone</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Engineered using Neural Architecture Search (NAS) paired with NetAdapt algorithms. Incorporates Squeeze-and-Excitation (SE) attention blocks and Hard-Swish activation non-linearities for sub-5 millisecond inference directly on embedded subsea microcontrollers.
+                </p>
+</div>
+<!-- Comparative Metric Pill Box -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col justify-between gap-2 min-w-[240px] font-mono text-label-sm">
+<div class="flex justify-between text-on-surface">
+<span class="text-outline">MACs (FLOPs):</span>
+<span class="text-primary">0.22 GFLOPs</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span class="text-outline">Top-1 Accuracy:</span>
+<span class="text-secondary font-bold">91.35%</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span class="text-outline">Top-5 Accuracy:</span>
+<span class="text-primary font-bold">98.11%</span>
+</div>
+<div class="flex justify-between text-on-surface">
+<span class="text-outline">Edge Jetson Latency:</span>
+<span class="text-secondary font-bold">3.8 ms</span>
+</div>
+</div>
+</div>
+<!-- Mini Sparkline-like Comparative Bars -->
+<div class="flex flex-col gap-1.5 pt-space-xs border-t-0">
+<div class="flex items-center justify-between text-label-sm font-mono text-outline">
+<span>AUV Battery Efficiency Rating</span>
+<span class="text-secondary">99.4% Efficiency Index</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 95%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Evaluation Methodology & Verification Standards -->
+<section class="w-full px-margin-lg py-space-xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-mono uppercase tracking-widest">// SECTION 04</span>
+<h2 class="font-headline-md text-headline-md text-primary font-bold mt-1">Evaluation Methodology &amp; Calibration</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+            Eliminating classification overconfidence through empirical verification standards and post-hoc temperature scaling.
+          </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Empirical Table View -->
+<div class="lg:col-span-8 bg-surface-container-low p-space-lg rounded-xl flex flex-col gap-space-md shadow-sm overflow-x-auto">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Held-Out Test Set Performance Matrix (N=4,548)</h3>
+<span class="font-label-sm text-label-sm text-outline font-mono">CUDA 12.2 FP16</span>
+</div>
+<table class="w-full text-left font-mono text-body-sm border-collapse">
+<thead>
+<tr class="bg-surface-container text-outline text-label-sm uppercase tracking-wider">
+<th class="py-2.5 px-3">Architecture</th>
+<th class="py-2.5 px-3">Top-1 Acc</th>
+<th class="py-2.5 px-3">Top-5 Acc</th>
+<th class="py-2.5 px-3">Macro F1</th>
+<th class="py-2.5 px-3">ECE (Uncal)</th>
+<th class="py-2.5 px-3">ECE (Scaled)</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-highest/0">
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-3 px-3 font-sans font-semibold text-primary flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+                    DINOv2 (ViT-B/14)
+                  </td>
+<td class="py-3 px-3 text-secondary font-bold">96.84%</td>
+<td class="py-3 px-3 text-primary">99.42%</td>
+<td class="py-3 px-3 text-on-surface">0.965</td>
+<td class="py-3 px-3 text-error">0.058</td>
+<td class="py-3 px-3 text-secondary font-semibold">0.014</td>
+</tr>
+<tr class="bg-surface-container/30 hover:bg-surface-container/60 transition-colors">
+<td class="py-3 px-3 font-sans font-semibold text-primary flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+                    ConvNeXt-Tiny
+                  </td>
+<td class="py-3 px-3 text-secondary font-bold">95.40%</td>
+<td class="py-3 px-3 text-primary">99.18%</td>
+<td class="py-3 px-3 text-on-surface">0.951</td>
+<td class="py-3 px-3 text-error">0.072</td>
+<td class="py-3 px-3 text-secondary font-semibold">0.019</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-3 px-3 font-sans font-semibold text-primary flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+                    Swin-T
+                  </td>
+<td class="py-3 px-3 text-secondary font-bold">94.78%</td>
+<td class="py-3 px-3 text-primary">98.90%</td>
+<td class="py-3 px-3 text-on-surface">0.943</td>
+<td class="py-3 px-3 text-error">0.065</td>
+<td class="py-3 px-3 text-secondary font-semibold">0.018</td>
+</tr>
+<tr class="bg-surface-container/30 hover:bg-surface-container/60 transition-colors">
+<td class="py-3 px-3 font-sans font-semibold text-primary flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+                    ViT-B/16
+                  </td>
+<td class="py-3 px-3 text-secondary font-bold">94.12%</td>
+<td class="py-3 px-3 text-primary">98.65%</td>
+<td class="py-3 px-3 text-on-surface">0.938</td>
+<td class="py-3 px-3 text-error">0.089</td>
+<td class="py-3 px-3 text-secondary font-semibold">0.021</td>
+</tr>
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-3 px-3 font-sans font-semibold text-primary flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                    MobileNetV3-Large
+                  </td>
+<td class="py-3 px-3 text-secondary font-bold">91.35%</td>
+<td class="py-3 px-3 text-primary">98.11%</td>
+<td class="py-3 px-3 text-on-surface">0.909</td>
+<td class="py-3 px-3 text-error">0.094</td>
+<td class="py-3 px-3 text-secondary font-semibold">0.024</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Calibration Protocol Detail Card -->
+<div class="lg:col-span-4 bg-surface-container-low p-space-lg rounded-xl flex flex-col justify-between gap-space-md shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm font-mono text-outline uppercase">Probabilistic Reliability</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">ECE &amp; Temperature Scaling</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Standard deep networks often exhibit overconfidence under poor light conditions. FishVision AI implements single-parameter Platt Temperature Scaling:
+              </p>
+</div>
+<!-- Mathematical Formula Representation -->
+<div class="bg-surface-container p-space-md rounded-lg font-mono text-center text-primary-fixed my-auto">
+<div class="text-body-md font-semibold tracking-wide">
+                q_i = \frac{e^{z_i / T}}{\sum_j e^{z_j / T}}
+              </div>
+<span class="font-label-sm text-label-sm text-outline mt-1 block">T &gt; 0 optimized via NLL on Validation Set</span>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-space-xs text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span>ECE reduced by avg <strong>74.3%</strong> across all taxa</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+<span>Guarantees calibrated bayesian confidence flags</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Technology Stack & Academic Engineering -->
+<section class="w-full px-margin-lg py-space-xl bg-surface-container-lowest/60">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-mono uppercase tracking-widest">// SECTION 05</span>
+<h2 class="font-headline-md text-headline-md text-primary font-bold mt-1">Technology Stack &amp; Academic Engineering</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+            Modular multi-tier microservice architecture tailored for deterministic batch processing and edge deployment.
+          </p>
+</div>
+<!-- Tech Matrix Bento -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Stack 1: Core DL -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center gap-space-xs text-secondary font-mono font-semibold text-label-md">
+<span class="material-symbols-outlined text-[18px]">neurology</span>
+<span>CORE DEEP LEARNING</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="p-2 rounded bg-surface-container text-body-sm font-mono text-primary flex items-center justify-between">
+<span>PyTorch 2.3</span>
+<span class="text-label-sm text-outline">LibTorch C++</span>
+</div>
+<div class="p-2 rounded bg-surface-container text-body-sm font-mono text-primary flex items-center justify-between">
+<span>Python 3.11</span>
+<span class="text-label-sm text-outline">Runtime</span>
+</div>
+<div class="p-2 rounded bg-surface-container text-body-sm font-mono text-primary flex items-center justify-between">
+<span>timm</span>
+<span class="text-label-sm text-outline">PyTorch Models</span>
+</div>
+<div class="p-2 rounded bg-surface-container text-body-sm font-mono text-primary flex items-center justify-between">
+<span>torchvision</span>
+<span class="text-label-sm text-outline">Transforms</span>
+</div>
+</div>
+</div>
+<!-- Stack 2: Backend & Serving -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center gap-space-xs text-secondary font-mono font-semibold text-label-md">
+<span class="material-symbols-outlined text-[18px]">dns</span>
+<span>BACKEND &amp; SERVING</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="p-2 rounded bg-surface-container text-body-sm font-mono text-primary flex items-center justify-between">
+<span>FastAPI</span>
+<span class="text-label-sm text-outline">Async REST</span>
+</div>
+<div class="p-2 rounded bg-surface-container text-body-sm font-mono text-primary flex items-center justify-between">
+<span>Uvicorn</span>
+<span class="text-label-sm text-outline">ASGI Engine</span>
+</div>
+<div class="p-2 rounded bg-surface-container text-body-sm font-mono text-primary flex items-center justify-between">
+<span>ONNX Runtime</span>
+<span class="text-label-sm text-outline">Cross-Platform</span>
+</div>
+<div class="p-2 rounded bg-surface-container text-body-sm font-mono text-primary flex items-center justify-between">
+<span>Async GPU Queue</span>
+<span class="text-label-sm text-outline">Throughput</span>
+</div>
+</div>
+</div>
+<!-- Stack 3: Research Tooling -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center gap-space-xs text-secondary font-mono font-semibold text-label-md">
+<span class="material-symbols-outlined text-[18px]">bar_chart</span>
+<span>FRONTEND &amp; TOOLING</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="p-2 rounded bg-surface-container text-body-sm font-mono text-primary flex items-center justify-between">
+<span>Tailwind Glass UI</span>
+<span class="text-label-sm text-outline">Responsive</span>
+</div>
+<div class="p-2 rounded bg-surface-container text-body-sm font-mono text-primary flex items-center justify-between">
+<span>Streamlit Core</span>
+<span class="text-label-sm text-outline">Prototyping</span>
+</div>
+<div class="p-2 rounded bg-surface-container text-body-sm font-mono text-primary flex items-center justify-between">
+<span>Chart.js / Canvas</span>
+<span class="text-label-sm text-outline">Telemetry</span>
+</div>
+<div class="p-2 rounded bg-surface-container text-body-sm font-mono text-primary flex items-center justify-between">
+<span>Albumentations</span>
+<span class="text-label-sm text-outline">Augmentation</span>
+</div>
+</div>
+</div>
+<!-- Stack 4: Deployment & Edge -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center gap-space-xs text-secondary font-mono font-semibold text-label-md">
+<span class="material-symbols-outlined text-[18px]">memory</span>
+<span>HARDWARE &amp; EDGE</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="p-2 rounded bg-surface-container text-body-sm font-mono text-primary flex items-center justify-between">
+<span>NVIDIA CUDA 12.2</span>
+<span class="text-label-sm text-outline">Compute</span>
+</div>
+<div class="p-2 rounded bg-surface-container text-body-sm font-mono text-primary flex items-center justify-between">
+<span>TensorRT</span>
+<span class="text-label-sm text-outline">Optimization</span>
+</div>
+<div class="p-2 rounded bg-surface-container text-body-sm font-mono text-primary flex items-center justify-between">
+<span>Docker Containers</span>
+<span class="text-label-sm text-outline">Multi-Arch</span>
+</div>
+<div class="p-2 rounded bg-surface-container text-body-sm font-mono text-primary flex items-center justify-between">
+<span>Jetson Orin Nano</span>
+<span class="text-label-sm text-outline">Target AUV</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Peer-Review Citation Block -->
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col gap-space-md shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">format_quote</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold">Academic Citation (BibTeX)</h3>
+</div>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-secondary font-mono text-label-md font-semibold flex items-center gap-space-xs transition-colors self-start md:self-auto" id="copyBibtexBtn" onclick="copyCitation()">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span id="copyBtnText">Copy BibTeX</span>
+</button>
+</div>
+<pre class="p-space-md rounded-lg bg-surface-container-lowest text-on-surface-variant font-mono text-body-sm overflow-x-auto leading-relaxed border-0 selection:bg-secondary selection:text-surface-dim" id="bibtexContent"><code>@article{fishvision2024marine,
+  title     = {FishVision AI: Multi-Model Deep Learning Benchmarks for Robust Marine Taxon Recognition in Turbid Environments},
+  author    = {Kaufmann, Elena M. and Thorne, Alistair R. and De Silva, Priyantha and Vance, Kenneth L.},
+  journal   = {IEEE Journal of Oceanic Engineering and Marine Computation},
+  volume    = {49},
+  number    = {3},
+  pages     = {812--828},
+  year      = {2024},
+  publisher = {IEEE},
+  doi       = {10.1109/JOE.2024.3398412}
+}</code></pre>
+</div>
+</div>
+</section>
+</div>
+<script>
+    function copyCitation() {
+      const bibtexText = document.getElementById('bibtexContent').innerText;
+      navigator.clipboard.writeText(bibtexText).then(() => {
+        const btnText = document.getElementById('copyBtnText');
+        const original = btnText.innerText;
+        btnText.innerText = 'Copied to Clipboard!';
+        setTimeout(() => {
+          btnText.innerText = original;
+        }, 2200);
+      });
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/30 py-space-lg mt-space-2xl"><div class="w-full px-margin-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant"><div class="flex flex-col gap-0.5 text-center md:text-left"><div class="font-label-md text-label-md font-semibold text-primary flex items-center gap-space-xs justify-center md:justify-start"><span class="material-symbols-outlined text-[16px] text-secondary">menu_book</span>Peer-Reviewed Scientific Baseline Dossier (IEEE Marine / OceanNet AI 2024)</div><div class="font-body-sm text-body-sm text-outline">Oceanic Specimen Classification Benchmark: 22,741 calibrated multi-spectral images across 152 verified taxa.</div></div><div class="flex items-center gap-space-lg text-center md:text-right"><span class="font-label-sm text-label-sm font-mono text-on-surface-variant">CC-BY-NC-SA 4.0 Open Academic License</span><span class="font-label-sm text-label-sm font-mono text-secondary">FishVision Core v2.4</span></div></div></footer></body></html>
